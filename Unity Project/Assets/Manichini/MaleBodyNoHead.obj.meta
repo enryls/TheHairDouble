@@ -1,0 +1,133 @@
+fileFormatVersion: 2
+guid: 8de4df9a45ec74844b945c538067c95c
+timeCreated: 1449159920
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: 2_Nipple
+    100002: 2_SkinHead
+    100004: 2_SkinHip
+    100006: 2_SkinNeck
+    100008: 2_SkinTorso
+    100010: 3_Fingernail
+    100012: 3_SkinArm
+    100014: 3_SkinFoot
+    100016: 3_SkinForearm
+    100018: 3_SkinHand
+    100020: 3_SkinLeg
+    100022: 3_Toenail
+    100024: //RootNode
+    400000: 2_Nipple
+    400002: 2_SkinHead
+    400004: 2_SkinHip
+    400006: 2_SkinNeck
+    400008: 2_SkinTorso
+    400010: 3_Fingernail
+    400012: 3_SkinArm
+    400014: 3_SkinFoot
+    400016: 3_SkinForearm
+    400018: 3_SkinHand
+    400020: 3_SkinLeg
+    400022: 3_Toenail
+    400024: //RootNode
+    2300000: 2_Nipple
+    2300002: 2_SkinHead
+    2300004: 2_SkinHip
+    2300006: 2_SkinNeck
+    2300008: 2_SkinTorso
+    2300010: 3_Fingernail
+    2300012: 3_SkinArm
+    2300014: 3_SkinFoot
+    2300016: 3_SkinForearm
+    2300018: 3_SkinHand
+    2300020: 3_SkinLeg
+    2300022: 3_Toenail
+    3300000: 2_Nipple
+    3300002: 2_SkinHead
+    3300004: 2_SkinHip
+    3300006: 2_SkinNeck
+    3300008: 2_SkinTorso
+    3300010: 3_Fingernail
+    3300012: 3_SkinArm
+    3300014: 3_SkinFoot
+    3300016: 3_SkinForearm
+    3300018: 3_SkinHand
+    3300020: 3_SkinLeg
+    3300022: 3_Toenail
+    4300000: 2_Nipple
+    4300002: 2_SkinHead
+    4300004: 2_SkinHip_MeshPart0
+    4300006: 2_SkinNeck
+    4300008: 2_SkinTorso
+    4300010: 3_Fingernail_MeshPart0
+    4300012: 3_SkinArm
+    4300014: 3_SkinFoot_MeshPart0
+    4300016: 3_SkinForearm
+    4300018: 3_SkinHand_MeshPart0
+    4300020: 3_SkinLeg
+    4300022: 3_Toenail_MeshPart0
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
