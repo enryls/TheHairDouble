@@ -1,0 +1,203 @@
+fileFormatVersion: 2
+guid: 60025a094310131418454baeee10db6d
+timeCreated: 1449055987
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: 1_Lip
+    100002: 1_Nostril
+    100004: 1_SkinFace
+    100006: 2_Nipple
+    100008: 2_SkinHead
+    100010: 2_SkinHip
+    100012: 2_SkinNeck
+    100014: 2_SkinTorso
+    100016: 3_Fingernail
+    100018: 3_SkinArm
+    100020: 3_SkinFoot
+    100022: 3_SkinForearm
+    100024: 3_SkinHand
+    100026: 3_SkinLeg
+    100028: 3_Toenail
+    100030: 4_Gums
+    100032: 4_InnerMouth
+    100034: 4_Teeth
+    100036: 4_Tongue
+    100038: 5_Cornea
+    100040: 5_Iris
+    100042: 5_Lacrimal
+    100044: 5_Pupil
+    100046: 5_Sclera
+    100048: 6_Eyelash
+    100050: 7_Tear
+    100052: //RootNode
+    400000: 1_Lip
+    400002: 1_Nostril
+    400004: 1_SkinFace
+    400006: 2_Nipple
+    400008: 2_SkinHead
+    400010: 2_SkinHip
+    400012: 2_SkinNeck
+    400014: 2_SkinTorso
+    400016: 3_Fingernail
+    400018: 3_SkinArm
+    400020: 3_SkinFoot
+    400022: 3_SkinForearm
+    400024: 3_SkinHand
+    400026: 3_SkinLeg
+    400028: 3_Toenail
+    400030: 4_Gums
+    400032: 4_InnerMouth
+    400034: 4_Teeth
+    400036: 4_Tongue
+    400038: 5_Cornea
+    400040: 5_Iris
+    400042: 5_Lacrimal
+    400044: 5_Pupil
+    400046: 5_Sclera
+    400048: 6_Eyelash
+    400050: 7_Tear
+    400052: //RootNode
+    2300000: 1_Lip
+    2300002: 1_Nostril
+    2300004: 1_SkinFace
+    2300006: 2_Nipple
+    2300008: 2_SkinHead
+    2300010: 2_SkinHip
+    2300012: 2_SkinNeck
+    2300014: 2_SkinTorso
+    2300016: 3_Fingernail
+    2300018: 3_SkinArm
+    2300020: 3_SkinFoot
+    2300022: 3_SkinForearm
+    2300024: 3_SkinHand
+    2300026: 3_SkinLeg
+    2300028: 3_Toenail
+    2300030: 4_Gums
+    2300032: 4_InnerMouth
+    2300034: 4_Teeth
+    2300036: 4_Tongue
+    2300038: 5_Cornea
+    2300040: 5_Iris
+    2300042: 5_Lacrimal
+    2300044: 5_Pupil
+    2300046: 5_Sclera
+    2300048: 6_Eyelash
+    2300050: 7_Tear
+    3300000: 1_Lip
+    3300002: 1_Nostril
+    3300004: 1_SkinFace
+    3300006: 2_Nipple
+    3300008: 2_SkinHead
+    3300010: 2_SkinHip
+    3300012: 2_SkinNeck
+    3300014: 2_SkinTorso
+    3300016: 3_Fingernail
+    3300018: 3_SkinArm
+    3300020: 3_SkinFoot
+    3300022: 3_SkinForearm
+    3300024: 3_SkinHand
+    3300026: 3_SkinLeg
+    3300028: 3_Toenail
+    3300030: 4_Gums
+    3300032: 4_InnerMouth
+    3300034: 4_Teeth
+    3300036: 4_Tongue
+    3300038: 5_Cornea
+    3300040: 5_Iris
+    3300042: 5_Lacrimal
+    3300044: 5_Pupil
+    3300046: 5_Sclera
+    3300048: 6_Eyelash
+    3300050: 7_Tear
+    4300000: 1_Lip
+    4300002: 1_Nostril
+    4300004: 1_SkinFace_MeshPart0
+    4300006: 2_Nipple
+    4300008: 2_SkinHead_MeshPart0
+    4300010: 2_SkinHip_MeshPart0
+    4300012: 2_SkinNeck
+    4300014: 2_SkinTorso
+    4300016: 3_Fingernail_MeshPart0
+    4300018: 3_SkinArm
+    4300020: 3_SkinFoot_MeshPart0
+    4300022: 3_SkinForearm
+    4300024: 3_SkinHand_MeshPart0
+    4300026: 3_SkinLeg
+    4300028: 3_Toenail_MeshPart0
+    4300030: 4_Gums
+    4300032: 4_InnerMouth
+    4300034: 4_Teeth
+    4300036: 4_Tongue
+    4300038: 5_Cornea
+    4300040: 5_Iris
+    4300042: 5_Lacrimal
+    4300044: 5_Pupil
+    4300046: 5_Sclera
+    4300048: 6_Eyelash
+    4300050: 7_Tear
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
