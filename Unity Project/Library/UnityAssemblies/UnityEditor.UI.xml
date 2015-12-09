@@ -19,7 +19,7 @@
     </member>
     <member name="M:UnityEditor.EventSystems.EventSystemEditor.OnInspectorGUI">
       <summary>
-        <para>See [[Editor.OnInspectorGUI]].</para>
+        <para>See Editor.OnInspectorGUI.</para>
       </summary>
     </member>
     <member name="M:UnityEditor.EventSystems.EventSystemEditor.OnPreviewGUI(UnityEngine.Rect,UnityEngine.GUIStyle)">
@@ -46,7 +46,7 @@
     </member>
     <member name="T:UnityEditor.UI.AnimationTriggersDrawer">
       <summary>
-        <para>PropertyDrawer for [[AnimationTriggers]].</para>
+        <para>PropertyDrawer for AnimationTriggers.</para>
       </summary>
     </member>
     <member name="T:UnityEditor.UI.AspectRatioFitterEditor">
@@ -66,7 +66,7 @@
     </member>
     <member name="M:UnityEditor.UI.ButtonEditor.OnInspectorGUI">
       <summary>
-        <para>See [[Editor.OnInspectorGUI]].</para>
+        <para>See Editor.OnInspectorGUI.</para>
       </summary>
     </member>
     <member name="T:UnityEditor.UI.CanvasScalerEditor">
@@ -76,7 +76,7 @@
     </member>
     <member name="T:UnityEditor.UI.ColorBlockDrawer">
       <summary>
-        <para>PropertyDrawer for [[ColorBlock]].</para>
+        <para>PropertyDrawer for ColorBlock.</para>
       </summary>
     </member>
     <member name="T:UnityEditor.UI.ContentSizeFitterEditor">
@@ -87,7 +87,7 @@
     </member>
     <member name="M:UnityEditor.UI.ContentSizeFitterEditor.OnInspectorGUI">
       <summary>
-        <para>See [[Editor.OnInspectorGUI]].</para>
+        <para>See Editor.OnInspectorGUI.</para>
       </summary>
     </member>
     <member name="T:UnityEditor.UI.DropdownEditor">
@@ -97,12 +97,12 @@
     </member>
     <member name="M:UnityEditor.UI.DropdownEditor.OnInspectorGUI">
       <summary>
-        <para>See [[Editor.OnInspectorGUI]].</para>
+        <para>See Editor.OnInspectorGUI.</para>
       </summary>
     </member>
     <member name="T:UnityEditor.UI.FontDataDrawer">
       <summary>
-        <para>PropertyDrawer for [[FontData]].</para>
+        <para>PropertyDrawer for FontData.</para>
       </summary>
     </member>
     <member name="M:UnityEditor.UI.FontDataDrawer.Init(UnityEditor.SerializedProperty)">
@@ -128,7 +128,7 @@
     </member>
     <member name="M:UnityEditor.UI.GraphicEditor.OnDisable">
       <summary>
-        <para>See [[MonoBehaviour.OnDisable]].</para>
+        <para>See MonoBehaviour.OnDisable.</para>
       </summary>
     </member>
     <member name="M:UnityEditor.UI.GraphicEditor.OnInspectorGUI">
@@ -155,17 +155,17 @@
     </member>
     <member name="M:UnityEditor.UI.GridLayoutGroupEditor.OnInspectorGUI">
       <summary>
-        <para>See [[Editor.OnInspectorGUI]].</para>
+        <para>See Editor.OnInspectorGUI.</para>
       </summary>
     </member>
     <member name="T:UnityEditor.UI.HorizontalOrVerticalLayoutGroupEditor">
       <summary>
-        <para>The Editor for the [[HorizontalOrVerticalLayoutGroup]] class.</para>
+        <para>The Editor for the HorizontalOrVerticalLayoutGroup class.</para>
       </summary>
     </member>
     <member name="M:UnityEditor.UI.HorizontalOrVerticalLayoutGroupEditor.OnInspectorGUI">
       <summary>
-        <para>See [[Editor.OnInspectorGUI]].</para>
+        <para>See Editor.OnInspectorGUI.</para>
       </summary>
     </member>
     <member name="T:UnityEditor.UI.ImageEditor">
@@ -191,7 +191,7 @@
     </member>
     <member name="M:UnityEditor.UI.ImageEditor.OnDisable">
       <summary>
-        <para>See [[MonoBehaviour.OnDisable]].</para>
+        <para>See MonoBehaviour.OnDisable.</para>
       </summary>
     </member>
     <member name="M:UnityEditor.UI.ImageEditor.OnInspectorGUI">
@@ -223,22 +223,22 @@
     </member>
     <member name="M:UnityEditor.UI.InputFieldEditor.OnInspectorGUI">
       <summary>
-        <para>See: [[Editor.OnInspectorGUI]].</para>
+        <para>See: Editor.OnInspectorGUI.</para>
       </summary>
     </member>
     <member name="T:UnityEditor.UI.LayoutElementEditor">
       <summary>
-        <para>Editor for the [[LayoutElement]] component.</para>
+        <para>Editor for the LayoutElement component.</para>
       </summary>
     </member>
     <member name="M:UnityEditor.UI.LayoutElementEditor.OnInspectorGUI">
       <summary>
-        <para>See: [[Editor.OnInspectorGUI]].</para>
+        <para>See: Editor.OnInspectorGUI.</para>
       </summary>
     </member>
     <member name="T:UnityEditor.UI.NavigationDrawer">
       <summary>
-        <para>PropertyDrawer for [[Navigation]].</para>
+        <para>PropertyDrawer for Navigation.</para>
       </summary>
     </member>
     <member name="T:UnityEditor.UI.RawImageEditor">
@@ -281,22 +281,22 @@
     </member>
     <member name="M:UnityEditor.UI.ScrollbarEditor.OnInspectorGUI">
       <summary>
-        <para>See: [[Editor.OnInspectorGUI]].</para>
+        <para>See: Editor.OnInspectorGUI.</para>
       </summary>
     </member>
     <member name="T:UnityEditor.UI.ScrollRectEditor">
       <summary>
-        <para>Editor for the [[ScrollRect]] component.</para>
+        <para>Editor for the ScrollRect component.</para>
       </summary>
     </member>
     <member name="M:UnityEditor.UI.ScrollRectEditor.OnDisable">
       <summary>
-        <para>See [[MonoBehaviour.OnDisable]].</para>
+        <para>See MonoBehaviour.OnDisable.</para>
       </summary>
     </member>
     <member name="M:UnityEditor.UI.ScrollRectEditor.OnInspectorGUI">
       <summary>
-        <para>See [[Editor.OnInspectorGUI]].</para>
+        <para>See Editor.OnInspectorGUI.</para>
       </summary>
     </member>
     <member name="T:UnityEditor.UI.SelectableEditor">
@@ -306,12 +306,12 @@
     </member>
     <member name="M:UnityEditor.UI.SelectableEditor.OnDisable">
       <summary>
-        <para>See [[MonoBehaviour.OnDisable]].</para>
+        <para>See MonoBehaviour.OnDisable.</para>
       </summary>
     </member>
     <member name="M:UnityEditor.UI.SelectableEditor.OnInspectorGUI">
       <summary>
-        <para>See [[Editor.OnInspectorGUI]].</para>
+        <para>See Editor.OnInspectorGUI.</para>
       </summary>
     </member>
     <member name="T:UnityEditor.UI.SelfControllerEditor">
@@ -321,7 +321,7 @@
     </member>
     <member name="M:UnityEditor.UI.SelfControllerEditor.OnInspectorGUI">
       <summary>
-        <para>See [[Editor.OnInspectorGUI]].</para>
+        <para>See Editor.OnInspectorGUI.</para>
       </summary>
     </member>
     <member name="T:UnityEditor.UI.SliderEditor">
@@ -331,12 +331,12 @@
     </member>
     <member name="M:UnityEditor.UI.SliderEditor.OnInspectorGUI">
       <summary>
-        <para>See [[Editor.OnInspectorGUI]].</para>
+        <para>See Editor.OnInspectorGUI.</para>
       </summary>
     </member>
     <member name="T:UnityEditor.UI.SpriteStateDrawer">
       <summary>
-        <para>PropertyDrawer for [[SpriteState]].</para>
+        <para>PropertyDrawer for SpriteState.</para>
       </summary>
     </member>
     <member name="T:UnityEditor.UI.TextEditor">
@@ -346,7 +346,7 @@
     </member>
     <member name="M:UnityEditor.UI.TextEditor.OnInspectorGUI">
       <summary>
-        <para>See [[Editor.OnInspectorGUI]].</para>
+        <para>See Editor.OnInspectorGUI.</para>
       </summary>
     </member>
     <member name="T:UnityEditor.UI.ToggleEditor">
@@ -356,7 +356,7 @@
     </member>
     <member name="M:UnityEditor.UI.ToggleEditor.OnInspectorGUI">
       <summary>
-        <para>See [[Editor.OnInspectorGUI]].</para>
+        <para>See Editor.OnInspectorGUI.</para>
       </summary>
     </member>
   </members>
