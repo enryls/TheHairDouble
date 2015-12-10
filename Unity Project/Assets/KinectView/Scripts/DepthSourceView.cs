@@ -95,9 +95,9 @@ public class DepthSourceView : MonoBehaviour
     
     void OnGUI()
     {
-        GUI.BeginGroup(new Rect(0, 0, Screen.width, Screen.height));
+        /*GUI.BeginGroup(new Rect(0, 0, Screen.width, Screen.height));
         GUI.TextField(new Rect(Screen.width - 300 , 50, 500, 50),  ViewMode.ToString());
-        GUI.EndGroup();
+        GUI.EndGroup();*/
     }
 
     void Update()
@@ -107,7 +107,7 @@ public class DepthSourceView : MonoBehaviour
             return;
         }
         
-        if (Input.GetButtonDown("Fire1"))
+        if (ScanBack.scan)
         {
             if(ViewMode == DepthViewMode.Scan)
             {

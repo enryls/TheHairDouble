@@ -41,9 +41,9 @@ public class Menu : MonoBehaviour {
 	void OnMouseUp(){
         GetComponent<Renderer>().material.color = onMouseClickColor;
 		if (isFemale)
-			CameraStart.posCamera = 2;
+			CameraStart.posCamera = 3;
 		if (isMale)
-            CameraStart.posCamera = 3;
+            CameraStart.posCamera = 2;
 
     }
 }
