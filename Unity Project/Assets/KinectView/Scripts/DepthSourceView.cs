@@ -4,13 +4,13 @@ using Windows.Kinect;
 
 public enum DepthViewMode
 {
-    Back,
-    Scan,
+    SeparateSourceReaders,
+    MultiSourceReader,
 }
 
 public class DepthSourceView : MonoBehaviour
 {
-    public DepthViewMode ViewMode = DepthViewMode.Back;
+    public DepthViewMode ViewMode = DepthViewMode.SeparateSourceReaders;
     
     public GameObject ColorSourceManager;
     public GameObject DepthSourceManager;
@@ -95,9 +95,7 @@ public class DepthSourceView : MonoBehaviour
     
     void OnGUI()
     {
-        /*GUI.BeginGroup(new Rect(0, 0, Screen.width, Screen.height));
-        GUI.TextField(new Rect(Screen.width - 300 , 50, 500, 50),  ViewMode.ToString());
-        GUI.EndGroup();*/
+       
     }
 
     void Update()
@@ -107,15 +105,15 @@ public class DepthSourceView : MonoBehaviour
             return;
         }
         
-        if (ScanBack.scan)
+        if (Input.GetButtonDown("Fire1"))
         {
-            if(ViewMode == DepthViewMode.Scan)
+            if(ViewMode == DepthViewMode.MultiSourceReader)
             {
-                ViewMode = DepthViewMode.Back;
+                ViewMode = DepthViewMode.SeparateSourceReaders;
             }
             else
             {
-                ViewMode = DepthViewMode.Scan;
+                ViewMode = DepthViewMode.MultiSourceReader;
             }
         }
         
@@ -128,7 +126,7 @@ public class DepthSourceView : MonoBehaviour
             0, 
             Space.Self);
             
-        if (ViewMode == DepthViewMode.Back)
+        if (ViewMode == DepthViewMode.SeparateSourceReaders)
         {
             if (ColorSourceManager == null)
             {
