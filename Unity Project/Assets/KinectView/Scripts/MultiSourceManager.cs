@@ -12,9 +12,10 @@ public class MultiSourceManager : MonoBehaviour {
     private ushort[] _DepthData;
     private byte[] _ColorData;
 
-    public Texture2D GetColorTexture()
+    public void GetColorTexture()
     {
-        return _ColorTexture;
+        // return _ColorTexture;
+        return;
     }
     
     public ushort[] GetDepthData()

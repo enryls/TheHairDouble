@@ -73,14 +73,14 @@
     <Compile Include="Assets\KinectView\Scripts\ColorSourceManager.cs" />
     <Compile Include="Assets\KinectView\Scripts\ColorSourceView.cs" />
     <Compile Include="Assets\KinectView\Scripts\DepthSourceManager.cs" />
-    <Compile Include="Assets\KinectView\Scripts\DepthSourceView.cs" />
     <Compile Include="Assets\KinectView\Scripts\DisableOnStart.cs" />
     <Compile Include="Assets\KinectView\Scripts\InfraredSourceManager.cs" />
     <Compile Include="Assets\KinectView\Scripts\InfraredSourceView.cs" />
     <Compile Include="Assets\KinectView\Scripts\MultiSourceManager.cs" />
-    <Compile Include="Assets\Scripts\CameraStart.cs" />
-    <Compile Include="Assets\Scripts\Menu.cs" />
-    <Compile Include="Assets\Scripts\ScanBack.cs" />
+    <Compile Include="Assets\Scripts\CameraPosition.cs" />
+    <Compile Include="Assets\Scripts\DepthSourceView.cs" />
+    <Compile Include="Assets\Scripts\ScanSceneButton.cs" />
+    <Compile Include="Assets\Scripts\StartSceneButton.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
