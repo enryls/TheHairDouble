@@ -79,6 +79,7 @@
     <Compile Include="Assets\KinectView\Scripts\MultiSourceManager.cs" />
     <Compile Include="Assets\Scripts\CameraPosition.cs" />
     <Compile Include="Assets\Scripts\DepthSourceView.cs" />
+    <Compile Include="Assets\Scripts\HandControll.cs" />
     <Compile Include="Assets\Scripts\ScanSceneButton.cs" />
     <Compile Include="Assets\Scripts\StartSceneButton.cs" />
   </ItemGroup>
