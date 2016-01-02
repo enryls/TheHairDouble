@@ -25,7 +25,7 @@ public class CameraPosition : MonoBehaviour {
 				transform.position = new Vector3 (-1000f, 0f, -17f);
 			break;
 			case(2):
-                transform.position = new Vector3(0f, 0f, -17f);
+                transform.position = new Vector3(1000f, -670f, -17f);
                 break;
 			case(3):
                 transform.position = new Vector3(1000f, -670f, -17f);

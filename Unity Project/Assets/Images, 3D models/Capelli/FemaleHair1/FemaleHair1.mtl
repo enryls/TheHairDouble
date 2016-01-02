@@ -1,0 +1,99 @@
+newmtl Ribbon
+d 1
+Ns 0.65
+Ni 0
+Ka 0.0901961 0.101961 0.0313726
+Kd 0.839216 0.839216 0.839216
+Ks 1 1 1
+Km 0.0001
+map_Kd /Maps/SallyMaeBow09.jpg
+
+newmtl Bow
+d 1
+Ns 0.65
+Ni 0
+Ka 0.0901961 0.101961 0.0313726
+Kd 0.839216 0.839216 0.839216
+Ks 1 1 1
+Km 0.0001
+map_Kd /Maps/SallyMaeBow09.jpg
+
+newmtl Mid
+d 1
+Ns 0.65
+Ni 0
+Ka 0.0901961 0.101961 0.0313726
+Kd 0.839216 0.839216 0.839216
+Ks 1 1 1
+Km 0.0001
+map_Kd /Maps/SallyMaeBow09.jpg
+
+newmtl Band
+d 1
+Ns 0.65
+Ni 0
+Ka 0.0901961 0.101961 0.0313726
+Kd 0.839216 0.839216 0.839216
+Ks 1 1 1
+Km 0.0001
+map_Kd /Maps/SallyMaeBow09.jpg
+
+newmtl PiggyTails
+d 1
+Ns 0.78
+Ni 0
+Ka 0 0 0
+Kd 0.909804 0.909804 0.909804
+Ks 0.878431 0.847059 0.788235
+Km 0.02
+map_Kd /Maps/SallyMaeHairTex01B.jpg
+map_D /ConvertedMaps/SallyMaeHairStrandsTrans.tif
+map_Bump /ConvertedMaps/SallyMaeHairTex01B.tif
+
+newmtl Head
+d 1
+Ns 0.78
+Ni 0
+Ka 0 0 0
+Kd 0.839216 0.839216 0.839216
+Ks 0.878431 0.847059 0.788235
+Km 0.02
+map_Kd /Maps/SallyMaeHairTex01B.jpg
+map_D /ConvertedMaps/SallyMaeHairStrandsTrans.tif
+map_Bump /ConvertedMaps/SallyMaeHairTex01B.tif
+
+newmtl Cap
+d 1
+Ns 0.78
+Ni 0
+Ka 0 0 0
+Kd 0.839216 0.839216 0.839216
+Ks 0.878431 0.847059 0.788235
+Km 0.02
+map_Kd /Maps/SallyMaeHairTex01.jpg
+map_D /ConvertedMaps/SallyMaeCapTrans.tif
+
+newmtl Strands
+d 1
+Ns 0.78
+Ni 0
+Ka 0 0 0
+Kd 0.839216 0.839216 0.839216
+Ks 0.878431 0.847059 0.788235
+Km 0.02
+map_Kd /Maps/SallyMaeHairTex01B.jpg
+map_D /ConvertedMaps/SallyMaeHairStrandsTrans.tif
+map_Bump /ConvertedMaps/SallyMaeHairTex01B.tif
+
+newmtl Bangs
+d 1
+Ns 0.78
+Ni 0
+Ka 0 0 0
+Kd 0.839216 0.839216 0.839216
+Ks 0.878431 0.847059 0.788235
+Km 0.02
+map_Kd /Maps/SallyMaeHairTex01B.jpg
+map_D /ConvertedMaps/SallyMaeHairStrandsTrans.tif
+map_Bump /ConvertedMaps/SallyMaeHairTex01B.tif
+

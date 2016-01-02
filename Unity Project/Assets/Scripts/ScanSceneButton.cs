@@ -49,9 +49,10 @@ public class ScanSceneButton : MonoBehaviour
         if (isScan)
         {
             ChangeTheDamnSprite();
-            scan = true;        
+            scan = true;
+            ActivateDepth.activeD = true;
 
-        }
+}
         if (isBack)
             CameraPosition.posCamera = 1;
         
