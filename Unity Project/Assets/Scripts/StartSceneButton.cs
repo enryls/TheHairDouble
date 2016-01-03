@@ -4,8 +4,6 @@ using System.Collections;
 public class StartSceneButton : MonoBehaviour {
 	public bool isMale = false;
 	public bool isFemale = false;
-    static public bool maleMode;
-    static public bool femaleMode;
 	Color maincolor;
 	Color onMouseEntercolor;
 	Color onMouseClickColor;
@@ -45,16 +43,18 @@ public class StartSceneButton : MonoBehaviour {
 		if (isFemale)
         {
             CameraPosition.posCamera = 3;
-            maleMode = false;
-            femaleMode = true;
-            
+            ActivateDepth.activeF = true;
+            ScanSceneButton.back = false;
+
         }
-			
-		if (isMale)
+
+        if (isMale)
+        {
             CameraPosition.posCamera = 2;
-            femaleMode = false;
-            maleMode = true;
-            
+            ActivateDepth.activeM = true;
+            ScanSceneButton.back = false;
+        }
+
 
     }
 }

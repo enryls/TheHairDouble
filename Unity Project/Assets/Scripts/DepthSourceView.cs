@@ -95,19 +95,7 @@ public class DepthSourceView : MonoBehaviour
 
     void Update()
     {
-       /* if (StartSceneButton.femaleMode)
-        {
-            transform.position = new Vector3(9f, 46f, 5f);
-            Quaternion target = Quaternion.Euler(4.7307f, 13.9811f, 355.9945f);
-            transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * 2f);
-
-        }
-        else if (StartSceneButton.maleMode)
-        {
-            transform.position = new Vector3(-970.2933f, -6.408559f, -33.93291f);
-            Quaternion target = Quaternion.Euler(-15.7354f, 3.9045f, 6.8085f);
-            transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * 2f);
-        }*/
+      
         if (_Sensor == null)
         {
             return;

@@ -10,6 +10,7 @@ public class ScanSceneButton : MonoBehaviour
     public bool isTryAgain = false;
     public static bool scan;
     public static bool tryagain;
+    public static bool back;
     Color maincolor;
     Color onMouseEntercolor;
     Color onMouseClickColor;
@@ -52,9 +53,15 @@ public class ScanSceneButton : MonoBehaviour
             scan = true;
             ActivateDepth.activeD = true;
 
-}
+        }
         if (isBack)
+        {
             CameraPosition.posCamera = 1;
+            back = true;
+            ActivateDepth.activeM = false;
+            ActivateDepth.activeF = false;
+            ActivateDepth.activeD = false;
+        }
         
         if (isContinue)
             CameraPosition.posCamera = 4;
