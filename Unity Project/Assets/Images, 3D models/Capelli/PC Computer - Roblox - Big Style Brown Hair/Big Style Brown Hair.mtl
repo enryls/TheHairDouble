@@ -1,0 +1,14 @@
+newmtl Handle1Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.4 0.4 0.4 
+
+d 1
+
+Ns 2295
+
+map_Ka Handle1Tex.png
+map_Kd Handle1Tex.png
+map_d Handle1Tex.png
+

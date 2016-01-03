@@ -1,0 +1,47 @@
+newmtl Cap
+d 1
+Ns 1
+Ni 0
+Ka 0 0 0
+Kd 0.8 0.8 0.8
+Ks 0 0 0
+Km 0
+map_Kd /Maps/ArmaniHairCapTex01.jpg
+map_D /ConvertedMaps/ArmaniHairCapTR.tif
+
+newmtl SidesUnder
+d 1
+Kd 0.8 0.8 0.8
+map_Kd /Maps/ArmaniHairStrandsTex01.jpg
+map_D /ConvertedMaps/ArmaniHairTrans.tif
+
+newmtl TopBack
+d 1
+Kd 0.8 0.8 0.8
+map_Kd /Maps/ArmaniHairStrandsTex01.jpg
+map_D /ConvertedMaps/ArmaniHairTrans.tif
+
+newmtl Neck
+d 1
+Kd 0.8 0.8 0.8
+map_Kd /Maps/ArmaniHairStrandsTex01.jpg
+map_D /ConvertedMaps/ArmaniHairTrans.tif
+
+newmtl Top
+d 1
+Kd 0.8 0.8 0.8
+map_Kd /Maps/ArmaniHairStrandsTex01.jpg
+map_D /ConvertedMaps/ArmaniHairTrans.tif
+
+newmtl Thin
+d 1
+Kd 0.8 0.8 0.8
+map_Kd /Maps/ArmaniHairThinTex01.jpg
+map_D /ConvertedMaps/ArmaniHairThinTrans.tif
+
+newmtl Sides
+d 1
+Kd 0.8 0.8 0.8
+map_Kd /Maps/ArmaniHairStrandsTex01.jpg
+map_D /ConvertedMaps/ArmaniHairTrans.tif
+

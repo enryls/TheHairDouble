@@ -1,0 +1,30 @@
+newmtl Skullcap
+d 1
+Kd 1 1 1
+map_Kd /Maps/ValCharmC_T01.jpg
+map_D /ConvertedMaps/ValCharmC_Tr.tif
+
+newmtl Base
+d 1
+Kd 1 1 1
+map_Kd /Maps/ValCharmH_T01.jpg
+map_D /ConvertedMaps/ValCharmH_Tr.tif
+
+newmtl Bangs
+d 1
+Kd 1 1 1
+map_Kd /Maps/ValCharmH_T01.jpg
+map_D /ConvertedMaps/ValCharmH_Tr.tif
+
+newmtl Top
+d 1
+Kd 1 1 1
+map_Kd /Maps/ValCharmH_T01.jpg
+map_D /ConvertedMaps/ValCharmH_Tr.tif
+
+newmtl Wisps
+d 1
+Kd 1 1 1
+map_Kd /Maps/ValCharmH_T01.jpg
+map_D /ConvertedMaps/ValCharmH_Tr.tif
+

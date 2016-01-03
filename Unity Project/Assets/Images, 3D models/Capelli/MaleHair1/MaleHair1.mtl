@@ -1,0 +1,24 @@
+newmtl Base
+d 1
+Ns 0.8
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.501961 0.501961 0.501961
+Km 0.1
+map_Kd /Maps/01_DukeBase.jpg
+map_D /ConvertedMaps/T_DukeBase.tif
+map_Bump /ConvertedMaps/B_DukeBase.tif
+
+newmtl Hair1
+d 1
+Ns 0.8
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.501961 0.501961 0.501961
+Km 0.1
+map_Kd /Maps/01_DukeHair.jpg
+map_D /ConvertedMaps/T_DukeHair.tif
+map_Bump /ConvertedMaps/B_DukeHair.tif
+

@@ -1,0 +1,18 @@
+newmtl Hair
+d 1
+Kd 1 1 1
+map_Kd /Maps/SW_Toulouse_09.jpg
+map_D /ConvertedMaps/SW_Toulouse_TR1.tif
+
+newmtl Strands
+d 1
+Kd 1 1 1
+map_Kd /Maps/SW_Toulouse_09.jpg
+map_D /ConvertedMaps/SW_Toulouse_TR1.tif
+
+newmtl Base
+d 1
+Kd 1 1 1
+map_Kd /Maps/SW_Toulouse_09B.jpg
+map_D /ConvertedMaps/SW_ToulouseT_Base_TR.tif
+

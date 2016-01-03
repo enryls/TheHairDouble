@@ -1,0 +1,71 @@
+newmtl WM_cap
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 0.984314 1
+Ks 0 0 0
+Km 0.02
+map_Kd /Maps/WMcaptext.jpg
+map_D /ConvertedMaps/WMcapTr.tif
+
+newmtl WM_Strands
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 0.984314 1
+Ks 0.454902 0.447059 0.454902
+Km 0.00139992
+map_Kd /Maps/WMBldshortstrands.jpg
+map_D /ConvertedMaps/WMstrands_trans2.tif
+map_Bump /ConvertedMaps/WMBldshortstrands.tif
+
+newmtl WM_Strands_D
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 0.984314 1
+Ks 0.839216 0.827451 0.839216
+Km 0.000199999
+map_Kd /Maps/WMBldshortstrands.jpg
+map_D /ConvertedMaps/WMstrands_thin.tif
+map_Bump /ConvertedMaps/WMBldshortstrands.tif
+
+newmtl WM_Strands_C
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 0.984314 1
+Ks 0.364706 0.364706 0.364706
+Km 0.00139992
+map_Kd /Maps/WMBldshortstrands.jpg
+map_D /ConvertedMaps/WMstrands_trans2.tif
+map_Bump /ConvertedMaps/WMBldshortstrands.tif
+
+newmtl WM_Strands_B
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 0.984314 1
+Ks 0.839216 0.827451 0.839216
+Km 0.000199999
+map_Kd /Maps/WMBldshortstrands.jpg
+map_D /ConvertedMaps/WMstrands_thin.tif
+map_Bump /ConvertedMaps/WMBldshortstrands.tif
+
+newmtl WM_Strands_A
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 1 0.984314 1
+Ks 0.521569 0.521569 0.521569
+Km 0.00139992
+map_Kd /Maps/WMBldshortstrands.jpg
+map_D /ConvertedMaps/WMstrands_trans2.tif
+map_Bump /ConvertedMaps/WMBldshortstrands.tif
+

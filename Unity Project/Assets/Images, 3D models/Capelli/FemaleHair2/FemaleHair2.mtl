@@ -1,0 +1,88 @@
+newmtl ShorterBangs2
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 0.968627 0.968627 0.968627
+Ks 0.0901961 0.0901961 0.0901961
+Km 3.6e-05
+map_Kd /Maps/PCAldoraHairTex01.jpg
+map_D /ConvertedMaps/PCAldoraHairStrandsTrans.tif
+
+newmtl ShorterBangs1
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 0.968627 0.968627 0.968627
+Ks 0.0901961 0.0901961 0.0901961
+Km 3.6e-05
+map_Kd /Maps/PCAldoraHairTex01.jpg
+map_D /ConvertedMaps/PCAldoraHairStrandsTrans.tif
+
+newmtl Bangs1
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 0.968627 0.968627 0.968627
+Ks 0.0901961 0.0901961 0.0901961
+Km 3.6e-05
+map_Kd /Maps/PCAldoraHairTex01.jpg
+map_D /ConvertedMaps/PCAldoraHairStrandsTrans.tif
+
+newmtl Bangs2
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 0.968627 0.968627 0.968627
+Ks 0.0901961 0.0901961 0.0901961
+Km 3.6e-05
+map_Kd /Maps/PCAldoraHairTex01.jpg
+map_D /ConvertedMaps/PCAldoraHairStrandsTrans.tif
+
+newmtl Cap
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 0.968627 0.968627 0.968627
+Ks 0.00784314 0.00784314 0.00784314
+Km 3.6e-05
+map_Kd /Maps/PCAldoraHairCapTex01.jpg
+map_D /ConvertedMaps/PCAldoraHairCapTrans.tif
+
+newmtl Under
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 0.968627 0.968627 0.968627
+Ks 0.0901961 0.0901961 0.0901961
+Km 3.6e-05
+map_Kd /Maps/PCAldoraHairTex01.jpg
+map_D /ConvertedMaps/PCAldoraHairStrandsTrans.tif
+
+newmtl Wisps
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 0.968627 0.968627 0.968627
+Ks 0.0901961 0.0901961 0.0901961
+Km 3.6e-05
+map_Kd /Maps/PCAldoraHairTex01.jpg
+map_D /ConvertedMaps/PCAldoraHairStrandsTrans.tif
+
+newmtl Head
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 0.968627 0.968627 0.968627
+Ks 0.0901961 0.0901961 0.0901961
+Km 3.6e-05
+map_Kd /Maps/PCAldoraHairTex01.jpg
+map_D /ConvertedMaps/PCAldoraHairStrandsTrans.tif
+
