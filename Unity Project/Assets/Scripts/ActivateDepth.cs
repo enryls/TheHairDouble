@@ -28,7 +28,7 @@ public class ActivateDepth : MonoBehaviour {
         if (isD)
         {
             if (activeD)
-                transform.position = new Vector3(992.86f, -668.01f, -11.1826f);
+                transform.position = new Vector3(992.86f, -669.37f, -11.1826f);
         }
         if (isF)
         {
