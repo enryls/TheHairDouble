@@ -7,9 +7,11 @@ public class SelectionHairScript : MonoBehaviour {
     Color onMouseClickColor;
     public bool isLeft = false;
     public bool isRight = false;
+    public bool isBack = false;
+    public bool isContinue = false;
     public GameObject[] FemaleHairs = new GameObject[5];
-    public int index = 0;
-    public int posCapelli = 0;
+    public GameObject[] MaleHairs = new GameObject[4];
+    private int index = 0;
 
     // Use this for initialization
     void Start () {
@@ -22,13 +24,27 @@ public class SelectionHairScript : MonoBehaviour {
         FemaleHairs[2] = GameObject.FindGameObjectWithTag("FemaleHair3");
         FemaleHairs[3] = GameObject.FindGameObjectWithTag("FemaleHair4");
         FemaleHairs[4] = GameObject.FindGameObjectWithTag("FemaleHair5");
-        FemaleHairs[index].transform.position = new Vector3(-1000.4f, -530.4478f, -9.193481f);
+
+        MaleHairs[0] = GameObject.FindGameObjectWithTag("MaleHair1");
+        MaleHairs[1] = GameObject.FindGameObjectWithTag("MaleHair2");
+        MaleHairs[2] = GameObject.FindGameObjectWithTag("MaleHair3");
+        MaleHairs[3] = GameObject.FindGameObjectWithTag("MaleHair4");
+        
     }
 	
 	// Update is called once per frame
 	void Update () {
 
+        if (ScanSceneButton.changeScene)
+        {
+            if (ActivateDepth.activeF)
+                FemaleHairs[index].transform.position = new Vector3(-1000.4f, -530.4478f, -9.193481f);
 
+            if(ActivateDepth.activeM)
+                MaleHairs[index].transform.position = new Vector3(-1000.4f, -530.4478f, -9.193481f);
+
+            ScanSceneButton.changeScene = false;
+        }
     }
 
     void OnMouseEnter()
@@ -44,29 +60,104 @@ public class SelectionHairScript : MonoBehaviour {
     {
         GetComponent<Renderer>().material.color = onMouseClickColor;
 
+        if (isBack)
+        {
+            CameraPosition.posCamera = 1;
+            ScanSceneButton.back = true;
+            ActivateDepth.activeM = false;
+            ActivateDepth.activeF = false;
+            ActivateDepth.activeD = false;
+            //Quì c'è un errore perchè i capelli se index !=0 non si riposizionano
+            MaleHairs[index].transform.position = new Vector3(-949.6119f, -531.4478f, -9.166519f);
+            FemaleHairs[index].transform.position = new Vector3(-1047.2f, -530.4478f, -9.193481f);               
+            index = 0;
+        }
+
+        if (isContinue)
+        {
+            CameraPosition.posCamera = 5;
+        }
+
         if (isRight)
         {
-            if (index < FemaleHairs.Length)
-                index++;
-            else
+            if (ActivateDepth.activeF)
             {
-                index = 0;
-            }
-            FemaleHairs[index - 1].transform.position = new Vector3(-1047.2f, -530.4478f, -9.193481f);
+                if (index < FemaleHairs.Length - 1)
+                {
+                    index++;
+                    FemaleHairs[index - 1].transform.position = new Vector3(-1047.2f, -530.4478f, -9.193481f);
 
-            FemaleHairs[index].transform.position = new Vector3(-1000.4f, -530.4478f, -9.193481f);
+                    FemaleHairs[index].transform.position = new Vector3(-1000.4f, -530.4478f, -9.193481f);
+                }
+
+                else
+                {
+                    index = 0;
+                    FemaleHairs[FemaleHairs.Length - 1].transform.position = new Vector3(-1047.2f, -530.4478f, -9.193481f);
+
+                    FemaleHairs[index].transform.position = new Vector3(-1000.4f, -530.4478f, -9.193481f);
+                }
+            }
+            if (ActivateDepth.activeM)
+            {
+                //Usare MaleHairs.Lenght al posto di 3 (Al momento non funziona)
+                if (index < 3)
+                {
+                    index++;
+                    MaleHairs[index - 1].transform.position = new Vector3(-949.6119f, -531.4478f, -9.166519f);
+
+                    MaleHairs[index].transform.position = new Vector3(-1000.4f, -530.4478f, -9.193481f);
+                }
+
+                else
+                {
+                    index = 0;
+                    //Usare MaleHairs.Lenght al posto di 3 (Al momento non funziona)
+                    MaleHairs[3].transform.position = new Vector3(-949.6119f, -531.4478f, -9.166519f);
+
+                    MaleHairs[index].transform.position = new Vector3(-1000.4f, -530.4478f, -9.193481f);
+                }
+            }
         }
         if (isLeft)
         {
-            if (index == 0)
-                index = FemaleHairs.Length - 1;
-            else
+            if (ActivateDepth.activeF)
             {
-                index--;
-            }
-            FemaleHairs[index + 1].transform.position = new Vector3(-1047.2f, -530.4478f, -9.193481f);
+                if (index == 0)
+                {
+                    index = FemaleHairs.Length - 1;
+                    FemaleHairs[0].transform.position = new Vector3(-1047.2f, -530.4478f, -9.193481f);
 
-            FemaleHairs[index].transform.position = new Vector3(-1000.4f, -530.4478f, -9.193481f);
+                    FemaleHairs[index].transform.position = new Vector3(-1000.4f, -530.4478f, -9.193481f);
+                }
+
+                else
+                {
+                    index--;
+                    FemaleHairs[index + 1].transform.position = new Vector3(-1047.2f, -530.4478f, -9.193481f);
+
+                    FemaleHairs[index].transform.position = new Vector3(-1000.4f, -530.4478f, -9.193481f);
+                }
+            }
+            if (ActivateDepth.activeM)
+            {
+                if (index == 0)
+                {
+                    //Usare MaleHairs.Lenght al posto di 3 (Al momento non funziona)
+                    index = 3;
+                    MaleHairs[0].transform.position = new Vector3(-949.6119f, -531.4478f, -9.166519f);
+
+                    MaleHairs[index].transform.position = new Vector3(-1000.4f, -530.4478f, -9.193481f);
+                }
+
+                else
+                {
+                    index--;
+                    MaleHairs[index + 1].transform.position = new Vector3(-949.6119f, -531.4478f, -9.166519f);
+
+                    MaleHairs[index].transform.position = new Vector3(-1000.4f, -530.4478f, -9.193481f);
+                }
+            }
         }
         
     }

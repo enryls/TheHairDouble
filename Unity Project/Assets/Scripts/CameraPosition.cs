@@ -33,6 +33,9 @@ public class CameraPosition : MonoBehaviour {
             case(4):
                 transform.position = new Vector3(-1000f, -500f, -17f);
                 break;
+            case (5):
+                transform.position = new Vector3(0f, -500f, -17f);
+                break;
 			
 
 		}

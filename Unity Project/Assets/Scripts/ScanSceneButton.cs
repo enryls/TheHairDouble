@@ -8,6 +8,7 @@ public class ScanSceneButton : MonoBehaviour
     public bool isBack = false;
     public bool isContinue = false;
     public bool isTryAgain = false;
+    public static bool changeScene;
     public static bool scan;
     public static bool tryagain;
     public static bool back;
@@ -64,7 +65,10 @@ public class ScanSceneButton : MonoBehaviour
         }
         
         if (isContinue)
+        {
             CameraPosition.posCamera = 4;
+            changeScene = true;
+        }
 
         if (isTryAgain)
             tryagain = true;
