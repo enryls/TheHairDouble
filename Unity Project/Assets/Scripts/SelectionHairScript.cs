@@ -68,8 +68,9 @@ public class SelectionHairScript : MonoBehaviour {
             ActivateDepth.activeM = false;
             ActivateDepth.activeF = false;
             ActivateDepth.activeD = false;
-            //Quì c'è un errore perchè i capelli se index !=0 non si riposizionano
-            
+            GameObject.FindGameObjectWithTag("ScanObject").transform.position = new Vector3(948.0611f, -664.79f, -10.73032f); 
+
+            //Automatizzare questi spostamenti         
             MaleHairs[0].transform.position = new Vector3(-949.6119f, -515f, -9.166519f);
             MaleHairs[1].transform.position = new Vector3(-949.6119f, -515f, -9.166519f);
             MaleHairs[2].transform.position = new Vector3(-949.6119f, -515f, -9.166519f);
