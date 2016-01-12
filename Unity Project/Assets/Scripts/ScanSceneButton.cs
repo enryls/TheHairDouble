@@ -68,6 +68,7 @@ public class ScanSceneButton : MonoBehaviour
         {
             CameraPosition.posCamera = 4;
             changeScene = true;
+            GameObject.FindGameObjectWithTag("ScanObject").transform.position = new Vector3(-1006.315f, -499.73f, -16.33473f); ;
         }
 
         if (isTryAgain)
