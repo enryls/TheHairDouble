@@ -25,7 +25,7 @@ public class DepthSourceView : MonoBehaviour
     
     // Only works at 4 right now
     private const int _DownsampleSize = 4;
-    private const double _DepthScale = 0.1f;
+    public const double _DepthScale = 0.16f;
     private const int _Speed = 50;
     
     private MultiSourceManager _MultiManager;
@@ -41,6 +41,7 @@ public class DepthSourceView : MonoBehaviour
             var frameDesc = _Sensor.DepthFrameSource.FrameDescription;
 
             // Downsample to lower resolution
+            
             CreateMesh(frameDesc.Width / _DownsampleSize, frameDesc.Height / _DownsampleSize);
 
             if (!_Sensor.IsOpen)

@@ -7,12 +7,9 @@ public class ScanSceneButton : MonoBehaviour
     public bool isScan = false;
     public bool isBack = false;
     public bool isContinue = false;
-    public bool isTryAgain = false;
     public static bool changeScene;
     public static bool scan;
-    public static bool tryagain;
     public static bool back;
-    public static bool returntoposition;
     Color maincolor;
     Color onMouseEntercolor;
     Color onMouseClickColor;
@@ -34,12 +31,9 @@ public class ScanSceneButton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (returntoposition)
-        {
-            GameObject.FindGameObjectWithTag("ScanObject").transform.position = new Vector3(948.0611f, -664.79f, -10.73032f); ;
-            returntoposition = false;
-        }
+       
     }
+
     void OnMouseEnter()
     {
         GetComponent<Renderer>().material.color = onMouseEntercolor;
@@ -73,11 +67,14 @@ public class ScanSceneButton : MonoBehaviour
         {
             CameraPosition.posCamera = 4;
             changeScene = true;
-            GameObject.FindGameObjectWithTag("ScanObject").transform.position = new Vector3(-1006.315f, -499.73f, -16.33473f); 
+            if (ActivateDepth.activeD)
+            {
+                GameObject.FindGameObjectWithTag("ScanObject").transform.position = new Vector3(-1005.97f, -501.3f, -14.9826f);
+                ActivateDepth.activeD = false;
+            }
         }
 
-        if (isTryAgain)
-            tryagain = true;
+        
           
     }
 
