@@ -69,7 +69,7 @@ public class ScanSceneButton : MonoBehaviour
             changeScene = true;
             if (ActivateDepth.activeD)
             {
-                GameObject.FindGameObjectWithTag("ScanObject").transform.position = new Vector3(-1005.97f, -501.3f, -14.9826f);
+                GameObject.FindGameObjectWithTag("ScanObject").transform.position = new Vector3(-1005.3f, -501.4f, -14.8f);
                 ActivateDepth.activeD = false;
             }
         }

@@ -29,7 +29,7 @@ public class ActivateDepth : MonoBehaviour {
         {
             if (activeD)
             {
-                transform.position = new Vector3(992.86f, -669.37f, -11.1826f);
+                transform.position = new Vector3(993.83f, -669.6f, -11.7f);
                 //activeD = false;
             }
             
@@ -37,12 +37,12 @@ public class ActivateDepth : MonoBehaviour {
         if (isF)
         {
             if (activeF)
-                transform.position = new Vector3(999.3f, -683.2f, -4.932602f);
+                transform.position = new Vector3(999.88f, -675.04f, -3.43f);
         }
         if (isM)
         {
             if (activeM)
-                transform.position = new Vector3(998.68f, -682.9f, -4.020004f);
+                transform.position = new Vector3(999.28f, -674.69f, -3.5f);
         }
         
     }

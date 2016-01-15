@@ -4,6 +4,7 @@ using System.Collections;
 public class HandControll : MonoBehaviour {
 
     private GameObject RightHand; // I create variable
+    private GameObject LeftHand;
     
     // Use this for initialization
     void Start () {
@@ -25,6 +26,19 @@ public class HandControll : MonoBehaviour {
             );
 
         }
+        /*if(LeftHand == null)
+        {
+            LeftHand = GameObject.Find("HandLeft");
+        }
+        else
+        {
+            LeftHand.transform.position = new Vector3(LeftHand.transform.position.x,
+            LeftHand.transform.position.y,
+            transform.position.z
+            );
+
+        }*/
+        
 
     }
 }
