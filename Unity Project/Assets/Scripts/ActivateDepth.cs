@@ -22,25 +22,31 @@ public class ActivateDepth : MonoBehaviour {
     {
         if (ScanSceneButton.back)
         {
+            //When the user click to Back
             Back();            
         }
 
         if (isD)
         {
+            
             if (activeD)
             {
+                //Set the position of Scan Object when the user click on StartCamera
                 transform.position = new Vector3(993.83f, -669.6f, -11.7f);
                 //activeD = false;
             }
             
         }
+       
         if (isF)
         {
+            //Set the position of the female body
             if (activeF)
                 transform.position = new Vector3(999.88f, -675.04f, -3.43f);
         }
         if (isM)
         {
+            //Set the position of the male body
             if (activeM)
                 transform.position = new Vector3(999.28f, -674.69f, -3.5f);
         }
@@ -49,6 +55,7 @@ public class ActivateDepth : MonoBehaviour {
 
     public void Back()
     {
+        //When Back is called return the objects of the Scan Scene to start position
         if (isD)
         {
 

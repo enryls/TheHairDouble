@@ -36,15 +36,18 @@ public class ScanSceneButton : MonoBehaviour
 
     void OnMouseEnter()
     {
+        //Color of the Buttons on Mouse Enter
         GetComponent<Renderer>().material.color = onMouseEntercolor;
     }
 
     void OnMouseExit()
     {
+        //Color of the buttons on Mouse Exit return to main color
         GetComponent<Renderer>().material.color = maincolor;
     }
     void OnMouseUp()
     {
+        //Color of the buttons on Mouse Up
         GetComponent<Renderer>().material.color = onMouseClickColor;
 
         if (isScan)

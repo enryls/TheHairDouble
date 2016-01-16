@@ -42,7 +42,7 @@ public class DepthSourceView : MonoBehaviour
 
             // Downsample to lower resolution
             
-            CreateMesh(frameDesc.Width / _DownsampleSize, frameDesc.Height / _DownsampleSize);
+            CreateMesh(frameDesc.Width  / _DownsampleSize, frameDesc.Height / _DownsampleSize);
 
             if (!_Sensor.IsOpen)
             {
@@ -57,7 +57,7 @@ public class DepthSourceView : MonoBehaviour
         GetComponent<MeshFilter>().mesh = _Mesh;
 
         _Vertices = new Vector3[width * height];
-        _UV = new Vector2[width * height];
+        _UV = new Vector2[width  * height];
         _Triangles = new int[6 * ((width - 1) * (height - 1))];
 
         int triangleIndex = 0;

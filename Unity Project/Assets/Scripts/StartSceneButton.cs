@@ -7,6 +7,7 @@ public class StartSceneButton : MonoBehaviour {
 	Color maincolor;
 	Color onMouseEntercolor;
 	Color onMouseClickColor;
+
 	// Use this for initialization
 	void Start () {
 		maincolor = new Color (0f, 0f, 0f, 1f);
@@ -31,16 +32,22 @@ public class StartSceneButton : MonoBehaviour {
 		}*/
 	}
 
-	void OnMouseEnter(){
+    void OnMouseEnter()
+    {
+        //Color of the Buttons on Mouse Enter
         GetComponent<Renderer>().material.color = onMouseEntercolor;
-	}
+    }
 
-	void OnMouseExit(){
+    void OnMouseExit()
+    {
+        //Color of the buttons on Mouse Exit return to main color
         GetComponent<Renderer>().material.color = maincolor;
-	}
-	void OnMouseUp(){
+    }
+    void OnMouseUp()
+    {
+        //Color of the buttons on Mouse Up
         GetComponent<Renderer>().material.color = onMouseClickColor;
-		if (isFemale)
+        if (isFemale)
         {
             CameraPosition.posCamera = 3;
             ActivateDepth.activeF = true;

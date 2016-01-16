@@ -13,13 +13,13 @@ public class CameraPosition : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.anyKey && posCamera<1)
-				posCamera = 1;
+		
 		PosizioneCamera ();
 	
 	}
 
 	void PosizioneCamera(){
+        //Move the Camera through the scenes
 		switch (posCamera) {
 			case(1):
 				transform.position = new Vector3 (-1000f, 0f, -17f);
