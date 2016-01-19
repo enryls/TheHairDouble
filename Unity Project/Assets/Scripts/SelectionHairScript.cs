@@ -91,6 +91,27 @@ public class SelectionHairScript : MonoBehaviour {
         if (isContinue)
         {
             CameraPosition.posCamera = 5;
+           
+                GameObject.FindGameObjectWithTag("ScanObject").transform.position = new Vector3(-5.4f, -501.2f, -16.4f);
+            
+            if(ActivateDepth.activeF)
+                FemaleHairs[index].transform.position = new Vector3(0.14f, -514.83f, -9.853479f);
+
+            if(ActivateDepth.activeM)
+                MaleHairs[index].transform.position = new Vector3(0.14f, -514.83f, -9.853479f);
+
+            /*if (GameObject.FindGameObjectWithTag("woman").transform.position == new Vector3(-999.25f, -506.84f, -6.53f))
+            {
+                GameObject.FindGameObjectWithTag("woman").transform.position = new Vector3(0.05f, -506.29f, -8.2f);
+                // ActivateDepth.activeF = false;
+                FemaleHairs[index].transform.position = new Vector3(0.14f, -514.83f, -9.853479f);
+            }
+            if (GameObject.FindGameObjectWithTag("man").transform.position == new Vector3(-999.55f, -506.49f, -6.6f))
+            {
+                GameObject.FindGameObjectWithTag("man").transform.position = new Vector3(0.05f, -506.29f, -8.2f);
+                //   ActivateDepth.activeM = false;
+                MaleHairs[index].transform.position = new Vector3(0.14f, -514.83f, -9.853479f);
+            }*/
         }
 
         if (isRight)

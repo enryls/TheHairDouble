@@ -27,9 +27,7 @@ public class StartSceneButton : MonoBehaviour {
 
 		
 		}
-		/*if (Input.GetKey (KeyCode.Return)) {
-			Application.LoadLevel ("FirstLv");
-		}*/
+	
 	}
 
     void OnMouseEnter()

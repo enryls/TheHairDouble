@@ -75,6 +75,16 @@ public class ScanSceneButton : MonoBehaviour
                 GameObject.FindGameObjectWithTag("ScanObject").transform.position = new Vector3(-1005.3f, -501.4f, -14.8f);
                 ActivateDepth.activeD = false;
             }
+            /*if (GameObject.FindGameObjectWithTag("woman").transform.position == new Vector3(999.88f, -675.04f, -3.43f))
+            {
+                GameObject.FindGameObjectWithTag("woman").transform.position = new Vector3(-999.25f, -506.84f, -6.53f);
+               //ActivateDepth.activeF = false;
+            }
+            if (GameObject.FindGameObjectWithTag("man").transform.position == new Vector3(999.28f, -674.69f, -3.5f))
+            {
+                GameObject.FindGameObjectWithTag("man").transform.position = new Vector3(-999.55f, -506.49f, -6.6f);
+               //ActivateDepth.activeM = false;
+            }*/
         }
 
         
