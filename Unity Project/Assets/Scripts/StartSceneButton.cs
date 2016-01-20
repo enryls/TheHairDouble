@@ -4,7 +4,9 @@ using System.Collections;
 public class StartSceneButton : MonoBehaviour {
 	public bool isMale = false;
 	public bool isFemale = false;
-	Color maincolor;
+    static public bool activeM;
+    static public bool activeF;
+    Color maincolor;
 	Color onMouseEntercolor;
 	Color onMouseClickColor;
 
@@ -45,19 +47,20 @@ public class StartSceneButton : MonoBehaviour {
     {
         //Color of the buttons on Mouse Up
         GetComponent<Renderer>().material.color = onMouseClickColor;
+
+        //Change the position of the Camera and select the correct body model for the gender selected
         if (isFemale)
         {
-            CameraPosition.posCamera = 3;
-            ActivateDepth.activeF = true;
-            ScanSceneButton.back = false;
-
+            CameraPosition.posCamera = 2;
+            activeF = true;
+            GameObject.FindGameObjectWithTag("woman").transform.position = new Vector3(999.88f, -675.04f, -3.43f);          
         }
 
         if (isMale)
         {
             CameraPosition.posCamera = 2;
-            ActivateDepth.activeM = true;
-            ScanSceneButton.back = false;
+            activeM = true;
+            GameObject.FindGameObjectWithTag("man").transform.position = new Vector3(999.28f, -674.69f, -3.5f);
         }
 
 

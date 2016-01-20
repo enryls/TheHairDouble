@@ -9,7 +9,7 @@ public class ScanSceneButton : MonoBehaviour
     public bool isContinue = false;
     public static bool changeScene;
     public static bool scan;
-    public static bool back;
+    public static bool activeD;
     Color maincolor;
     Color onMouseEntercolor;
     Color onMouseClickColor;
@@ -54,37 +54,42 @@ public class ScanSceneButton : MonoBehaviour
         {
             ChangeTheDamnSprite();
             scan = true;
-            ActivateDepth.activeD = true;
+            activeD = true;
+            GameObject.FindGameObjectWithTag("ScanObject").transform.position = new Vector3(993.83f, -669.6f, -11.7f);
 
         }
         if (isBack)
         {
             CameraPosition.posCamera = 1;
-            back = true;
-            ActivateDepth.activeM = false;
-            ActivateDepth.activeF = false;
-            ActivateDepth.activeD = false;
+            StartSceneButton.activeM = false;
+            StartSceneButton.activeF = false;
+            activeD = false;
+            GameObject.FindGameObjectWithTag("ScanObject").transform.position = new Vector3(947.5f, -668.01f, -11.1826f);
+            GameObject.FindGameObjectWithTag("man").transform.position = new Vector3(944.7f, -682.9f, -4.020004f);
+            GameObject.FindGameObjectWithTag("woman").transform.position = new Vector3(945.3f, -683.2f, -4.932602f);
         }
         
         if (isContinue)
         {
-            CameraPosition.posCamera = 4;
+            CameraPosition.posCamera = 3;
             changeScene = true;
-            if (ActivateDepth.activeD)
+
+            //Fix this movement
+            if (activeD)
             {
                 GameObject.FindGameObjectWithTag("ScanObject").transform.position = new Vector3(-1005.3f, -501.4f, -14.8f);
-                ActivateDepth.activeD = false;
+                
             }
-            /*if (GameObject.FindGameObjectWithTag("woman").transform.position == new Vector3(999.88f, -675.04f, -3.43f))
+            if (StartSceneButton.activeF)
             {
                 GameObject.FindGameObjectWithTag("woman").transform.position = new Vector3(-999.25f, -506.84f, -6.53f);
                //ActivateDepth.activeF = false;
             }
-            if (GameObject.FindGameObjectWithTag("man").transform.position == new Vector3(999.28f, -674.69f, -3.5f))
+            if (StartSceneButton.activeM)
             {
                 GameObject.FindGameObjectWithTag("man").transform.position = new Vector3(-999.55f, -506.49f, -6.6f);
                //ActivateDepth.activeM = false;
-            }*/
+            }
         }
 
         

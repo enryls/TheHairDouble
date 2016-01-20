@@ -8,6 +8,7 @@ public class WallPapersSelection : MonoBehaviour
     Color onMouseClickColor;
     public bool isLeft = false;
     public bool isRight = false;
+    public bool isBack = false;
     public GameObject[] WallPapers = new GameObject[8];
     static public int index = 0;
 
@@ -52,10 +53,30 @@ public class WallPapersSelection : MonoBehaviour
     {
         //Color of the buttons on Mouse Up
         GetComponent<Renderer>().material.color = onMouseClickColor;
+        
+        if (isBack)
+        {
+            //If Click on Back
+            ScanSceneButton.changeScene = true;
+            CameraPosition.posCamera = 3;
+            if (ScanSceneButton.activeD)
+                GameObject.FindGameObjectWithTag("ScanObject").transform.position = new Vector3(-1005.3f, -501.4f, -14.8f);
 
-        //if the Clicked Button isRight runs the array to the right
+            if (StartSceneButton.activeF)
+            {
+                GameObject.FindGameObjectWithTag("woman").transform.position = new Vector3(-999.25f, -506.84f, -6.53f);
+            }
+
+            if (StartSceneButton.activeM)
+            {
+                GameObject.FindGameObjectWithTag("man").transform.position = new Vector3(-999.55f, -506.49f, -6.6f);
+            }
+
+        }
+       
         if (isRight)
         {
+            //if Click Right Arrow runs the array to the right
             if (index < WallPapers.Length - 1)
             {   
                 
@@ -74,9 +95,10 @@ public class WallPapersSelection : MonoBehaviour
                 WallPapers[index].transform.position = new Vector3(0.3f, -500f, -9f);
             }
         }
-        //if the Clicked Button isLeft runs the array to the left
+
         if (isLeft)
         {
+            //if Click Left Arrow runs the array to the left
             if (index == 0)
             {
                 //index point on the first object of the array
