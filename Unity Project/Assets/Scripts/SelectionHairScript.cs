@@ -109,7 +109,7 @@ public class SelectionHairScript : MonoBehaviour {
 
             if (StartSceneButton.activeF) {
                 FemaleHairs[index].transform.position = new Vector3(0.14f, -514.83f, -9.853479f);
-                GameObject.FindGameObjectWithTag("woman").transform.position = new Vector3(0.05f, -506.29f, -8.2f);
+                GameObject.FindGameObjectWithTag("woman").transform.position = new Vector3(0.65f, -506.64f, -8.13f);
             }
             if (StartSceneButton.activeM) {
                 MaleHairs[index].transform.position = new Vector3(0.14f, -514.83f, -9.853479f);
