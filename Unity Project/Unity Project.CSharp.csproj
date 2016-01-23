@@ -80,9 +80,11 @@
     <Compile Include="Assets\Scripts\CameraPosition.cs" />
     <Compile Include="Assets\Scripts\DepthSourceView.cs" />
     <Compile Include="Assets\Scripts\HandControll.cs" />
+    <Compile Include="Assets\Scripts\MeshCut.cs" />
     <Compile Include="Assets\Scripts\ScanSceneButton.cs" />
     <Compile Include="Assets\Scripts\SelectionHairScript.cs" />
     <Compile Include="Assets\Scripts\StartSceneButton.cs" />
+    <Compile Include="Assets\Scripts\ToolUser.cs" />
     <Compile Include="Assets\Scripts\WallPapersSelection.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
