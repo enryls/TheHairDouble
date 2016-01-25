@@ -7,7 +7,7 @@ public class BodySourceView : MonoBehaviour
 {
     public Material BoneMaterial;
     public GameObject BodySourceManager;
-    
+    static public GameObject body;
     private Dictionary<ulong, GameObject> _Bodies = new Dictionary<ulong, GameObject>();
     private BodySourceManager _BodyManager;
     
@@ -109,7 +109,7 @@ public class BodySourceView : MonoBehaviour
     
     private GameObject CreateBodyObject(ulong id)
     {
-        GameObject body = new GameObject("Body:" + id);
+         body = new GameObject("Body:" + id);
         
         for (Kinect.JointType jt = Kinect.JointType.SpineBase; jt <= Kinect.JointType.ThumbRight; jt++)
         {
@@ -148,7 +148,7 @@ public class BodySourceView : MonoBehaviour
             {
                 lr.SetPosition(0, jointObj.localPosition);
                 lr.SetPosition(1, GetVector3FromJoint(targetJoint.Value));
-                lr.SetColors(GetColorForState (sourceJoint.TrackingState), GetColorForState(targetJoint.Value.TrackingState));
+              //  lr.SetColors(GetColorForState (sourceJoint.TrackingState), GetColorForState(targetJoint.Value.TrackingState));
             }
             else
             {

@@ -87,7 +87,7 @@ public class ScanSceneButton : MonoBehaviour
             }
             if (StartSceneButton.activeM)
             {
-                GameObject.FindGameObjectWithTag("man").transform.position = new Vector3(-999.55f, -506.49f, -6.6f);
+                GameObject.FindGameObjectWithTag("man").transform.position = new Vector3(-999.85f, -506.49f, -6.6f);
                //ActivateDepth.activeM = false;
             }
         }

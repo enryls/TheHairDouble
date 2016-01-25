@@ -12,12 +12,15 @@ public class ToolUser : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (Input.GetKey(KeyCode.F))
+        if (Input.GetMouseButtonDown(1))
         {
+            print("Hi!");
+
             RaycastHit hit;
 
             if(Physics.Raycast(transform.position, transform.forward, out hit))
             {
+                print("Hi2!");
                 GameObject[] pieces = MeshCut.Cut(hit.collider.gameObject, transform.position, transform.right, capMaterial);
 
                 if (!pieces[1].GetComponent<Rigidbody>())
@@ -30,6 +33,8 @@ public class ToolUser : MonoBehaviour {
 
     void OnDrawGizmosSelected()
     {
+        Gizmos.color = Color.green;
+
         Gizmos.DrawLine(transform.position, transform.position + transform.forward * 5.0f);
         Gizmos.DrawLine(transform.position + transform.up * 0.5f, transform.position + transform.up * 0.5f + transform.forward * 5.0f);
         Gizmos.DrawLine(transform.position + -transform.up * 0.5f, transform.position + -transform.up * 0.5f + transform.forward * 5.0f);

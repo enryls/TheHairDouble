@@ -63,7 +63,7 @@ public class MeshCut : MonoBehaviour {
     {
 
         victim_transform = victim.transform;
-
+       
         blade = new Plane(victim.transform.InverseTransformDirection(-normalDirection),
                           victim.transform.InverseTransformPoint(anchorPoint));
 
