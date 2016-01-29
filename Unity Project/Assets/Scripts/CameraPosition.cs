@@ -24,19 +24,19 @@ public class CameraPosition : MonoBehaviour {
 		switch (posCamera) {
 			case(1):
 				transform.position = new Vector3 (-1000f, 0f, -17f);
-              //  BodySourceView.body.transform.position = new Vector3(-1000f, 0f, 0f);
+                //BodySourceView.body.transform.position = new Vector3(-1000f, 0f, 0f);
                 break;
 			case(2):
                 transform.position = new Vector3(1000f, -670f, -17f);
-             //   BodySourceView.body.transform.position = new Vector3(1000f, -670f, 0f);
+                //BodySourceView.body.transform.position = new Vector3(1000f, -670f, 0f);
                 break;	
             case(3):
                 transform.position = new Vector3(-1000f, -500f, -17f);
-              //  BodySourceView.body.transform.position = new Vector3(-1000f, -500f, 0f);
+                //BodySourceView.body.transform.position = new Vector3(-1000f, -500f, 0f);
                 break;
             case (4):
                 transform.position = new Vector3(0f, -500f, -17f);
-              //  BodySourceView.body.transform.position = new Vector3(0f, -500f, 0f);
+                //BodySourceView.body.transform.position = new Vector3(0f, -500f, 0f);
                 break;
 			
 
