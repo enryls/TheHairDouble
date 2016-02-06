@@ -68,41 +68,5 @@ public class StartSceneButton : MonoBehaviour {
 
 
     }
-    void OnCollisionEnter2D(Collision2D coll)
-    {
-       // Color of the Buttons on Collision Enter
-        GetComponent<Renderer>().material.color = onMouseEntercolor;
-    }
-
-    void OnCollisionStay2D(Collision2D coll)
-    {
-        collisionCurrent += Time.deltaTime;
-
-        if (collisionCurrent > collisionRequired)
-        {
-            //Color of the buttons on Collision Stay
-            GetComponent<Renderer>().material.color = onMouseClickColor;
-            if (isFemale)
-            {
-                CameraPosition.posCamera = 2;
-                activeF = true;
-                GameObject.FindGameObjectWithTag("woman").transform.position = new Vector3(999.88f, -675.04f, -3.43f);
-            }
-
-            if (isMale)
-            {
-                CameraPosition.posCamera = 2;
-                activeM = true;
-                GameObject.FindGameObjectWithTag("man").transform.position = new Vector3(999.28f, -674.69f, -3.5f);
-            }
-
-        }
-    }
-
-    void OnCollisionExit2D(Collision2D coll)
-    {
-        collisionCurrent = 0.0f;
-        //Color of the buttons on Collision Exit return to main color
-        GetComponent<Renderer>().material.color = maincolor;
-    }
+    
 }

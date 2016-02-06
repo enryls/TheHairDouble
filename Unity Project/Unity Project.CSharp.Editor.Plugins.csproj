@@ -87,29 +87,11 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>Library\UnityAssemblies\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.EditorTestsRunner">
-      <HintPath>Library\UnityAssemblies\UnityEditor.EditorTestsRunner.dll</HintPath>
+    <Reference Include="OpenCvSharp">
+      <HintPath>Assets\KScript\OpenCV\OpenCvSharp.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.Networking">
-      <HintPath>Library\UnityAssemblies\UnityEditor.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="nunit.framework">
-      <HintPath>Library\UnityAssemblies\nunit.framework.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>Library\UnityAssemblies\UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.Advertisements">
-      <HintPath>Library\UnityAssemblies\UnityEditor.Advertisements.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.TreeEditor">
-      <HintPath>Library\UnityAssemblies\UnityEditor.TreeEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>Assets\KScript\SharpZipLib\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -124,6 +106,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Standard Assets\Editor\KinectCopyPluginDataHelper.cs" />
+    <Compile Include="Assets\Standard Assets\Editor\KinectFacePostBuildCopyPluginData.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Images, 3D models\Resources\BlurShader.shader" />
+    <None Include="Assets\Images, 3D models\Resources\BlurShader2.shader" />
+    <None Include="Assets\Images, 3D models\Resources\BlurShader3.shader" />
+    <None Include="Assets\Images, 3D models\Resources\BodyShader.shader" />
+    <None Include="Assets\Images, 3D models\Resources\Color2DepthShader.shader" />
+    <None Include="Assets\Images, 3D models\Resources\Depth2ColorShader.shader" />
+    <None Include="Assets\Images, 3D models\Resources\DepthShader.shader" />
+    <None Include="Assets\Images, 3D models\Resources\Dilate.shader" />
+    <None Include="Assets\Images, 3D models\Resources\Erode.shader" />
+    <None Include="Assets\Images, 3D models\Resources\SpeechGrammar.grxml.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

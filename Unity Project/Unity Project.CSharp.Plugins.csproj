@@ -57,14 +57,14 @@
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCvSharp">
+      <HintPath>Assets\KScript\OpenCV\OpenCvSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>Assets\KScript\SharpZipLib\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -74,7 +74,51 @@
     <Compile Include="Assets\Standard Assets\ExceptionHelper.cs" />
     <Compile Include="Assets\Standard Assets\INativeWrapper.cs" />
     <Compile Include="Assets\Standard Assets\KinectBuffer.cs" />
+    <Compile Include="Assets\Standard Assets\KinectFaceSpecialCases.cs" />
     <Compile Include="Assets\Standard Assets\KinectSpecialCases.cs" />
+    <Compile Include="Assets\Standard Assets\KinectVisualGestureBuilderSpecialCases.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\CaptureStatusChangedEventArgs.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\CollectionStatusChangedEventArgs.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\FaceAlignment.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\FaceAlignmentQuality.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\FaceFrame.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\FaceFrameArrivedEventArgs.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\FaceFrameFeatures.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\FaceFrameReader.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\FaceFrameReference.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\FaceFrameResult.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\FaceFrameSource.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\FaceModel.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\FaceModelBuilder.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\FaceModelBuilderAttributes.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\FaceModelBuilderCaptureStatus.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\FaceModelBuilderCollectionStatus.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\FaceModelData.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\FacePointType.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\FaceProperty.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\FaceShapeAnimations.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\FaceShapeDeformations.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\HighDefinitionFaceFrame.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\HighDefinitionFaceFrameArrivedEventArgs.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\HighDefinitionFaceFrameReader.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\HighDefinitionFaceFrameReference.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\HighDefinitionFaceFrameSource.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\HighDetailFacePoints.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\KinectFaceUnityAddinUtils.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\RectI.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\TrackingIdLostEventArgs.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\VisualGestureBuilder\ContinuousGestureResult.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\VisualGestureBuilder\DiscreteGestureResult.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\VisualGestureBuilder\Gesture.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\VisualGestureBuilder\GestureType.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\VisualGestureBuilder\KinectVisualGestureBuilderUnityAddinUtils.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\VisualGestureBuilder\TrackingIdLostEventArgs.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\VisualGestureBuilder\VisualGestureBuilderDatabase.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\VisualGestureBuilder\VisualGestureBuilderFrame.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\VisualGestureBuilder\VisualGestureBuilderFrameArrivedEventArgs.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\VisualGestureBuilder\VisualGestureBuilderFrameReader.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\VisualGestureBuilder\VisualGestureBuilderFrameReference.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\VisualGestureBuilder\VisualGestureBuilderFrameSource.cs" />
     <Compile Include="Assets\Standard Assets\NativeObjectCache.cs" />
     <Compile Include="Assets\Standard Assets\NativeWrapper.cs" />
     <Compile Include="Assets\Standard Assets\SmartGCHandle.cs" />
@@ -153,6 +197,18 @@
     <Compile Include="Assets\Standard Assets\Windows\Kinect\TrackingConfidence.cs" />
     <Compile Include="Assets\Standard Assets\Windows\Kinect\TrackingState.cs" />
     <Compile Include="Assets\Standard Assets\Windows\Kinect\Vector4.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Images, 3D models\Resources\BlurShader.shader" />
+    <None Include="Assets\Images, 3D models\Resources\BlurShader2.shader" />
+    <None Include="Assets\Images, 3D models\Resources\BlurShader3.shader" />
+    <None Include="Assets\Images, 3D models\Resources\BodyShader.shader" />
+    <None Include="Assets\Images, 3D models\Resources\Color2DepthShader.shader" />
+    <None Include="Assets\Images, 3D models\Resources\Depth2ColorShader.shader" />
+    <None Include="Assets\Images, 3D models\Resources\DepthShader.shader" />
+    <None Include="Assets\Images, 3D models\Resources\Dilate.shader" />
+    <None Include="Assets\Images, 3D models\Resources\Erode.shader" />
+    <None Include="Assets\Images, 3D models\Resources\SpeechGrammar.grxml.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

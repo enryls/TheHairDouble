@@ -60,6 +60,12 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
+    <Reference Include="OpenCvSharp">
+      <HintPath>Assets\KScript\OpenCV\OpenCvSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>Assets\KScript\SharpZipLib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity Project.CSharp.Plugins.csproj">
@@ -68,6 +74,22 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\KScript\AvatarController.cs" />
+    <Compile Include="Assets\KScript\FacetrackingManager.cs" />
+    <Compile Include="Assets\KScript\Filters\BoneOrientationsConstraint.cs" />
+    <Compile Include="Assets\KScript\Filters\JointPositionsFilter.cs" />
+    <Compile Include="Assets\KScript\GrabRotateScript.cs" />
+    <Compile Include="Assets\KScript\InteractionManager.cs" />
+    <Compile Include="Assets\KScript\Interfaces\DepthSensorInterface.cs" />
+    <Compile Include="Assets\KScript\Interfaces\Kinect1Interface.cs" />
+    <Compile Include="Assets\KScript\Interfaces\Kinect2Interface.cs" />
+    <Compile Include="Assets\KScript\Interfaces\OpenNI2Interface.cs" />
+    <Compile Include="Assets\KScript\KinectGestures.cs" />
+    <Compile Include="Assets\KScript\KinectInterop.cs" />
+    <Compile Include="Assets\KScript\KinectManager.cs" />
+    <Compile Include="Assets\KScript\MouseControl.cs" />
+    <Compile Include="Assets\KScript\SpeechErrorHandler.cs" />
+    <Compile Include="Assets\KScript\SpeechManager.cs" />
     <Compile Include="Assets\KinectView\Scripts\BodySourceManager.cs" />
     <Compile Include="Assets\KinectView\Scripts\BodySourceView.cs" />
     <Compile Include="Assets\KinectView\Scripts\ColorSourceManager.cs" />
@@ -86,6 +108,18 @@
     <Compile Include="Assets\Scripts\StartSceneButton.cs" />
     <Compile Include="Assets\Scripts\ToolUser.cs" />
     <Compile Include="Assets\Scripts\WallPapersSelection.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Images, 3D models\Resources\BlurShader.shader" />
+    <None Include="Assets\Images, 3D models\Resources\BlurShader2.shader" />
+    <None Include="Assets\Images, 3D models\Resources\BlurShader3.shader" />
+    <None Include="Assets\Images, 3D models\Resources\BodyShader.shader" />
+    <None Include="Assets\Images, 3D models\Resources\Color2DepthShader.shader" />
+    <None Include="Assets\Images, 3D models\Resources\Depth2ColorShader.shader" />
+    <None Include="Assets\Images, 3D models\Resources\DepthShader.shader" />
+    <None Include="Assets\Images, 3D models\Resources\Dilate.shader" />
+    <None Include="Assets\Images, 3D models\Resources\Erode.shader" />
+    <None Include="Assets\Images, 3D models\Resources\SpeechGrammar.grxml.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
