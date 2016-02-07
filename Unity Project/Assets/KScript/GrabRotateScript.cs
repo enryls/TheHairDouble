@@ -79,7 +79,7 @@ public class GrabRotateScript : MonoBehaviour
 						if(hit.collider.gameObject == gameObject)
 						{
 							selectedObject = gameObject;
-                            onMouseEntercolor = new Color(0.9607f, 0.6784f, 0.3450f, 1f);
+                            
                         }
 					}
 				}
@@ -87,14 +87,13 @@ public class GrabRotateScript : MonoBehaviour
 			}
 			else
 			{
-                GetComponent<Renderer>().material.color = onMouseEntercolor;
+                
 
                 if (isFemale)
                 {
                     CameraPosition.posCamera = 2;
                     StartSceneButton.activeF = true;
                     GameObject.FindGameObjectWithTag("woman").transform.position = new Vector3(999.88f, -675.04f, -3.43f);
-                    isFemale = false;
                 }
 
                 if (isMale)
@@ -102,7 +101,6 @@ public class GrabRotateScript : MonoBehaviour
                     CameraPosition.posCamera = 2;
                     StartSceneButton.activeM = true;
                     GameObject.FindGameObjectWithTag("man").transform.position = new Vector3(999.28f, -674.69f, -3.5f);
-                    isMale = false;
                 }
 
                 if (isScan)

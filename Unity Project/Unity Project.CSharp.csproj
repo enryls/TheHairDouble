@@ -87,6 +87,8 @@
     <Compile Include="Assets\KScript\KinectGestures.cs" />
     <Compile Include="Assets\KScript\KinectInterop.cs" />
     <Compile Include="Assets\KScript\KinectManager.cs" />
+    <Compile Include="Assets\KScript\ModelFaceController.cs" />
+    <Compile Include="Assets\KScript\ModelHatController.cs" />
     <Compile Include="Assets\KScript\MouseControl.cs" />
     <Compile Include="Assets\KScript\SpeechErrorHandler.cs" />
     <Compile Include="Assets\KScript\SpeechManager.cs" />
