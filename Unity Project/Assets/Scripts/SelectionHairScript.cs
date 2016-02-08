@@ -41,11 +41,11 @@ public class SelectionHairScript : MonoBehaviour {
         if (ScanSceneButton.changeScene)
         {
             if (StartSceneButton.activeF)
-                PositionFemale();
+                PositionFemale(1);
             //FemaleHairs[index].transform.position = new Vector3(-999.76f, -515.03f, -8.253479f);
 
             if (StartSceneButton.activeM)
-                PositionMale();
+                PositionMale(1);
             // MaleHairs[index].transform.position = new Vector3(-999.76f, -515.03f, -8.253479f);
 
             ScanSceneButton.changeScene = false;
@@ -109,11 +109,13 @@ public class SelectionHairScript : MonoBehaviour {
                 GameObject.FindGameObjectWithTag("ScanObject").transform.position = new Vector3(-5.4f, -501.2f, -16.4f);
 
             if (StartSceneButton.activeF) {
-                FemaleHairs[index].transform.position = new Vector3(0.14f, -514.83f, -9.853479f);
+                PositionFemale(2);
+                //FemaleHairs[index].transform.position = new Vector3(0.14f, -514.83f, -9.853479f);
                 GameObject.FindGameObjectWithTag("woman").transform.position = new Vector3(0.65f, -506.64f, -8.13f);
             }
             if (StartSceneButton.activeM) {
-                MaleHairs[index].transform.position = new Vector3(0.14f, -514.83f, -9.853479f);
+                PositionMale(2);
+                //MaleHairs[index].transform.position = new Vector3(0.14f, -514.83f, -9.853479f);
                 GameObject.FindGameObjectWithTag("man").transform.position = new Vector3(0.05f, -506.29f, -8.2f);
             }
             
@@ -128,7 +130,7 @@ public class SelectionHairScript : MonoBehaviour {
                 {
                     index++;
 
-                    PositionFemale();
+                    PositionFemale(1);
 
                     FemaleHairs[index - 1].transform.position = new Vector3(-1047.2f, -515f, -9.193481f);
 
@@ -139,7 +141,7 @@ public class SelectionHairScript : MonoBehaviour {
                 {
                     index = 0;
 
-                    PositionFemale();
+                    PositionFemale(1);
 
                     FemaleHairs[FemaleHairs.Length - 1].transform.position = new Vector3(-1047.2f, -515f, -9.193481f);
 
@@ -153,7 +155,7 @@ public class SelectionHairScript : MonoBehaviour {
                 {
                     index++;
 
-                    PositionMale();
+                    PositionMale(1);
 
                     MaleHairs[index - 1].transform.position = new Vector3(-949.6119f, -515f, -9.166519f);
 
@@ -164,7 +166,7 @@ public class SelectionHairScript : MonoBehaviour {
                 {
                     index = 0;
 
-                    PositionMale();
+                    PositionMale(1);
                     //Usare MaleHairs.Lenght al posto di 3 (Al momento non funziona)
                     MaleHairs[3].transform.position = new Vector3(-949.6119f, -515f, -9.166519f);
 
@@ -179,7 +181,7 @@ public class SelectionHairScript : MonoBehaviour {
                 if (index == 0)
                 {
                     index = FemaleHairs.Length - 1;
-                    PositionFemale();
+                    PositionFemale(1);
                     FemaleHairs[0].transform.position = new Vector3(-1047.2f, -515f, -9.193481f);
 
                    // FemaleHairs[index].transform.position = new Vector3(-999.76f, -515.03f, -8.253479f);
@@ -188,7 +190,7 @@ public class SelectionHairScript : MonoBehaviour {
                 else
                 {
                     index--;
-                    PositionFemale();
+                    PositionFemale(1);
                     FemaleHairs[index + 1].transform.position = new Vector3(-1047.2f, -515f, -9.193481f);
 
                     //FemaleHairs[index].transform.position = new Vector3(-999.76f, -515.03f, -8.253479f);
@@ -199,7 +201,7 @@ public class SelectionHairScript : MonoBehaviour {
                 if (index == 0)
                 {
                     index = 3;
-                    PositionMale();
+                    PositionMale(1);
 
                     //Usare MaleHairs.Lenght al posto di 3 (Al momento non funziona)
                     
@@ -211,7 +213,7 @@ public class SelectionHairScript : MonoBehaviour {
                 else
                 {
                     index--;
-                    PositionMale();
+                    PositionMale(1);
                     MaleHairs[index + 1].transform.position = new Vector3(-949.6119f, -515f, -9.166519f);
 
                    // MaleHairs[index].transform.position = new Vector3(-999.76f, -515.03f, -8.253479f);
@@ -221,50 +223,81 @@ public class SelectionHairScript : MonoBehaviour {
         
     }
 
-    void PositionFemale()
+    void PositionFemale(int choice)
     {
-        switch (index)
+        if (choice == 1)
         {
-            case 0:
-                FemaleHairs[index].transform.position = new Vector3(-999.76f, -515.09f, -8.58f);
-                break;
-            case 1:
-                FemaleHairs[index].transform.position = new Vector3(-999.76f, -515.17f, -8.54f);
-                break;
-            case 2:
-                FemaleHairs[index].transform.position = new Vector3(-999.76f, -515.28f, -8.57f);
-                break;
-            case 3:
-                FemaleHairs[index].transform.position = new Vector3(-999.76f, -515.35f, -8.56f);
-                break;
-            case 4:
-                FemaleHairs[index].transform.position = new Vector3(-999.76f, -515.24f, -8.7f);
-                break;
-            default:
-                FemaleHairs[index].transform.position = new Vector3(-999.76f, -515.03f, -8.253479f);
-                break;
+            switch (index)
+            {
+                case 0:
+                    FemaleHairs[index].transform.position = new Vector3(-999.76f, -515.09f, -8.58f);
+                    break;
+                case 1:
+                    FemaleHairs[index].transform.position = new Vector3(-999.76f, -515.17f, -8.54f);
+                    break;
+                case 2:
+                    FemaleHairs[index].transform.position = new Vector3(-999.76f, -515.28f, -8.57f);
+                    break;
+                case 3:
+                    FemaleHairs[index].transform.position = new Vector3(-999.76f, -515.35f, -8.56f);
+                    break;
+                case 4:
+                    FemaleHairs[index].transform.position = new Vector3(-999.76f, -515.24f, -8.7f);
+                    break;
+                default:
+                    FemaleHairs[index].transform.position = new Vector3(-999.76f, -515.03f, -8.253479f);
+                    break;
+            }
+        }
+        else if(choice==2)
+        {
+            FemaleHairs[index].transform.position = new Vector3(0.06f, -515f, -10.24f);
         }
     }
 
-    void PositionMale()
+    void PositionMale(int choice)
     {
-        switch (index)
+        if (choice == 1)
         {
-            case 0:
-                MaleHairs[index].transform.position = new Vector3(-999.76f, -515f, -8.35f);
-                break;
-            case 1:
-                MaleHairs[index].transform.position = new Vector3(-999.76f, -515.3f, -8.54f);
-                break;
-            case 2:
-                MaleHairs[index].transform.position = new Vector3(-999.76f, -515.36f, -8.49f);
-                break;
-            case 3:
-                MaleHairs[index].transform.position = new Vector3(-999.76f, -515.12f, -8.37f);
-                break;
-            default:
-                MaleHairs[index].transform.position = new Vector3(-999.76f, -515f, -8.4f);
-                break;
+            switch (index)
+            {
+                case 0:
+                    MaleHairs[index].transform.position = new Vector3(-999.76f, -515f, -8.35f);
+                    break;
+                case 1:
+                    MaleHairs[index].transform.position = new Vector3(-999.76f, -515.3f, -8.54f);
+                    break;
+                case 2:
+                    MaleHairs[index].transform.position = new Vector3(-999.76f, -515.36f, -8.49f);
+                    break;
+                case 3:
+                    MaleHairs[index].transform.position = new Vector3(-999.76f, -515.12f, -8.37f);
+                    break;
+                default:
+                    MaleHairs[index].transform.position = new Vector3(-999.76f, -515f, -8.4f);
+                    break;
+            }
+        }
+        else if (choice == 2)
+        {
+            switch (index)
+            {
+                case 0:
+                    MaleHairs[index].transform.position = new Vector3(0.14f, -515f, -9.8f);
+                    break;
+                case 1:
+                    MaleHairs[index].transform.position = new Vector3(0.09f, -515.22f, -10f);
+                    break;
+                case 2:
+                    MaleHairs[index].transform.position = new Vector3(0.03f, -515.39f, -10f);
+                    break;
+                case 3:
+                    MaleHairs[index].transform.position = new Vector3(0.07f, -515.14f, -10f);
+                    break;
+                default:
+                    MaleHairs[index].transform.position = new Vector3(0.14f, -515.14f, -10f);
+                    break;
+            }
         }
     }
 

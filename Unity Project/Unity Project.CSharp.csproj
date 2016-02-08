@@ -90,6 +90,7 @@
     <Compile Include="Assets\KScript\ModelFaceController.cs" />
     <Compile Include="Assets\KScript\ModelHatController.cs" />
     <Compile Include="Assets\KScript\MouseControl.cs" />
+    <Compile Include="Assets\KScript\SetBackgroundImage.cs" />
     <Compile Include="Assets\KScript\SpeechErrorHandler.cs" />
     <Compile Include="Assets\KScript\SpeechManager.cs" />
     <Compile Include="Assets\KinectView\Scripts\BodySourceManager.cs" />
