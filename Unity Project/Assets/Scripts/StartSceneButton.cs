@@ -4,13 +4,13 @@ using System.Collections;
 public class StartSceneButton : MonoBehaviour {
 	public bool isMale = false;
 	public bool isFemale = false;
+    public bool isTryOnYourSelf = false;
+    public bool isGoToScan = false;
     static public bool activeM;
     static public bool activeF;
     Color maincolor;
 	Color onMouseEntercolor;
 	Color onMouseClickColor;
-    public float collisionRequired = 2.5f;
-    private float collisionCurrent = 0.0f;
 
 
     // Use this for initialization
@@ -38,13 +38,15 @@ public class StartSceneButton : MonoBehaviour {
     void OnMouseEnter()
     {
         //Color of the Buttons on Mouse Enter
-        GetComponent<Renderer>().material.color = onMouseEntercolor;
+        //if (!activeF && !activeM)
+            GetComponent<Renderer>().material.color = onMouseEntercolor;
     }
 
     void OnMouseExit()
     {
         //Color of the buttons on Mouse Exit return to main color
-        GetComponent<Renderer>().material.color = maincolor;
+        //if(!activeF && !activeM)
+         GetComponent<Renderer>().material.color = maincolor;
     }
     void OnMouseUp()
     {
@@ -54,18 +56,37 @@ public class StartSceneButton : MonoBehaviour {
         //Change the position of the Camera and select the correct body model for the gender selected
         if (isFemale)
         {
-            CameraPosition.posCamera = 2;
+           
             activeF = true;
-            GameObject.FindGameObjectWithTag("woman").transform.position = new Vector3(999.88f, -675.04f, -3.43f);          
+                     
         }
 
         if (isMale)
         {
-            CameraPosition.posCamera = 2;
+            
             activeM = true;
-            GameObject.FindGameObjectWithTag("man").transform.position = new Vector3(999.28f, -674.69f, -3.5f);
+            
         }
+        if (activeF || activeM)
+        {
+            if (isGoToScan)
+            {
+                CameraPosition.posCamera = 2;
+                if (activeM)
+                {
+                    GameObject.FindGameObjectWithTag("man").transform.position = new Vector3(999.28f, -674.69f, -3.5f);
+                }
+                else if (activeF)
+                {
+                    GameObject.FindGameObjectWithTag("woman").transform.position = new Vector3(999.88f, -675.04f, -3.43f);
+                }
+            }
 
+            if (isTryOnYourSelf)
+            {
+                Application.LoadLevel("SceneTryToYourself");
+            }
+        }
 
     }
     

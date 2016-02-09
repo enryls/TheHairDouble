@@ -104,12 +104,14 @@
     <Compile Include="Assets\KinectView\Scripts\MultiSourceManager.cs" />
     <Compile Include="Assets\Scripts\CameraPosition.cs" />
     <Compile Include="Assets\Scripts\DepthSourceView.cs" />
+    <Compile Include="Assets\Scripts\HairOnTry.cs" />
     <Compile Include="Assets\Scripts\HandControll.cs" />
     <Compile Include="Assets\Scripts\MeshCut.cs" />
     <Compile Include="Assets\Scripts\ScanSceneButton.cs" />
     <Compile Include="Assets\Scripts\SelectionHairScript.cs" />
     <Compile Include="Assets\Scripts\StartSceneButton.cs" />
     <Compile Include="Assets\Scripts\ToolUser.cs" />
+    <Compile Include="Assets\Scripts\TryOnYourSelfCO.cs" />
     <Compile Include="Assets\Scripts\WallPapersSelection.cs" />
   </ItemGroup>
   <ItemGroup>
