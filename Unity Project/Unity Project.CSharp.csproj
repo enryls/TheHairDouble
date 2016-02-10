@@ -75,9 +75,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\KScript\AvatarController.cs" />
+    <Compile Include="Assets\KScript\BackgroundRemovalManager.cs" />
     <Compile Include="Assets\KScript\FacetrackingManager.cs" />
     <Compile Include="Assets\KScript\Filters\BoneOrientationsConstraint.cs" />
     <Compile Include="Assets\KScript\Filters\JointPositionsFilter.cs" />
+    <Compile Include="Assets\KScript\ForegroundToImage.cs" />
     <Compile Include="Assets\KScript\GrabRotateScript.cs" />
     <Compile Include="Assets\KScript\InteractionManager.cs" />
     <Compile Include="Assets\KScript\Interfaces\DepthSensorInterface.cs" />
@@ -90,6 +92,7 @@
     <Compile Include="Assets\KScript\ModelFaceController.cs" />
     <Compile Include="Assets\KScript\ModelHatController.cs" />
     <Compile Include="Assets\KScript\MouseControl.cs" />
+    <Compile Include="Assets\KScript\PortraitBackground.cs" />
     <Compile Include="Assets\KScript\SetBackgroundImage.cs" />
     <Compile Include="Assets\KScript\SpeechErrorHandler.cs" />
     <Compile Include="Assets\KScript\SpeechManager.cs" />
@@ -102,10 +105,10 @@
     <Compile Include="Assets\KinectView\Scripts\InfraredSourceManager.cs" />
     <Compile Include="Assets\KinectView\Scripts\InfraredSourceView.cs" />
     <Compile Include="Assets\KinectView\Scripts\MultiSourceManager.cs" />
+    <Compile Include="Assets\Scripts\BackgroundSceneComponent.cs" />
     <Compile Include="Assets\Scripts\CameraPosition.cs" />
     <Compile Include="Assets\Scripts\DepthSourceView.cs" />
     <Compile Include="Assets\Scripts\HairOnTry.cs" />
-    <Compile Include="Assets\Scripts\HandControll.cs" />
     <Compile Include="Assets\Scripts\MeshCut.cs" />
     <Compile Include="Assets\Scripts\ScanSceneButton.cs" />
     <Compile Include="Assets\Scripts\SelectionHairScript.cs" />

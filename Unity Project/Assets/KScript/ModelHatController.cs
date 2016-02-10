@@ -8,6 +8,8 @@ public class ModelHatController : MonoBehaviour
 	
 	[Tooltip("Vertical offset of the hat above the head position (in meters).")]
 	public float verticalOffset = 0f;
+    public float horizontalOffset = 0f;
+    public float zOffset = 0f;
 
 	[Tooltip("Smooth factor used for hat-model movement and rotation.")]
 	public float smoothFactor = 10f;
@@ -52,7 +54,7 @@ public class ModelHatController : MonoBehaviour
 
 			if(verticalOffset != 0f)
 			{
-				Vector3 dirHead = new Vector3(0, verticalOffset, 0);
+				Vector3 dirHead = new Vector3(horizontalOffset, verticalOffset, zOffset);
 				dirHead = transform.InverseTransformDirection(dirHead);
 				newPosition += dirHead;
 			}

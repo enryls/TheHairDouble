@@ -164,6 +164,10 @@ public class TryOnYourSelfCO : MonoBehaviour {
                 }
             }
         }
+        if (isContinue)
+        {
+            Application.LoadLevel("SceneBackGround");
+        }
     }
 
     void ActiveFemale()
