@@ -25,17 +25,29 @@ public class TryOnYourSelfCO : MonoBehaviour {
         onMouseClickColor = new Color(0.2f, 0.1882f, 0.1921f, 1f);
         GetComponent<Renderer>().material.color = maincolor;
         //Assign the Arrays Objects
-        FemaleHairs[0] = GameObject.FindGameObjectWithTag("FemaleHair1");
-        FemaleHairs[1] = GameObject.FindGameObjectWithTag("FemaleHair2");
-        FemaleHairs[2] = GameObject.FindGameObjectWithTag("FemaleHair3");
-        FemaleHairs[3] = GameObject.FindGameObjectWithTag("FemaleHair4");
-        FemaleHairs[4] = GameObject.FindGameObjectWithTag("FemaleHair5");
+        AssignObject();
 
-        MaleHairs[0] = GameObject.FindGameObjectWithTag("MaleHair1");
-        MaleHairs[1] = GameObject.FindGameObjectWithTag("MaleHair2");
-        MaleHairs[2] = GameObject.FindGameObjectWithTag("MaleHair3");
-        MaleHairs[3] = GameObject.FindGameObjectWithTag("MaleHair4");
+        //Desable the Arrays Objects
+        /*for(int i=0; i < 5; i++)
+        {
+            FemaleHairs[i].gameObject.SetActive(false);
+            if (i < 4)
+            {
+                MaleHairs[i].gameObject.SetActive(false);
+            }
+        }*/
+        FemaleHairs[0].gameObject.SetActive(false);
+        FemaleHairs[1].gameObject.SetActive(false);
+        FemaleHairs[2].gameObject.SetActive(false);
+        FemaleHairs[3].gameObject.SetActive(false);
+        FemaleHairs[4].gameObject.SetActive(false);
 
+        MaleHairs[0].gameObject.SetActive(false);
+        MaleHairs[1].gameObject.SetActive(false);
+        MaleHairs[2].gameObject.SetActive(false);
+        MaleHairs[3].gameObject.SetActive(false);
+
+        //Enable the Sex choosen
         if (StartSceneButton.activeF)
             ActiveFemale();
         
@@ -77,13 +89,13 @@ public class TryOnYourSelfCO : MonoBehaviour {
         {
             if (StartSceneButton.activeF)
             {
+                print("femminadestraok");
                 if (index < FemaleHairs.Length - 1)
                 {
                     index++;
-
+                    FemaleHairs[index - 1].gameObject.SetActive(false);
                     ActiveFemale();
 
-                    FemaleHairs[index - 1].GetComponent<ModelHatController>().enabled = false;
 
 
                 }
@@ -92,37 +104,38 @@ public class TryOnYourSelfCO : MonoBehaviour {
                 {
                     index = 0;
 
+                    FemaleHairs[FemaleHairs.Length - 1].gameObject.SetActive(false);
                     ActiveFemale();
 
-                    FemaleHairs[FemaleHairs.Length - 1].GetComponent<ModelHatController>().enabled = false;
 
-                   
+
                 }
-                print("Right Female");
+               
             }
             if (StartSceneButton.activeM)
             {
+                print("maschiodestraok");
                 //Usare MaleHairs.Lenght al posto di 3 (Al momento non funziona)
                 if (index < 3)
                 {
                     index++;
 
+                    MaleHairs[index - 1].gameObject.SetActive(false);
                     ActiveMale();
 
-                    MaleHairs[index - 1].GetComponent<ModelHatController>().enabled = false;
 
-                    
+
                 }
 
                 else
                 {
                     index = 0;
 
+                    MaleHairs[3].gameObject.SetActive(false);
                     ActiveMale();
                     //Usare MaleHairs.Lenght al posto di 3 (Al momento non funziona)
-                    MaleHairs[3].GetComponent<ModelHatController>().enabled = false;
 
-                    
+
                 }
             }
         }
@@ -133,34 +146,40 @@ public class TryOnYourSelfCO : MonoBehaviour {
                 if (index == 0)
                 {
                     index = FemaleHairs.Length - 1;
+
+                    FemaleHairs[0].gameObject.SetActive(false);
                     ActiveFemale();
-                    FemaleHairs[0].GetComponent<ModelHatController>().enabled = false;
                 }
 
                 else
                 {
                     index--;
+
+                    FemaleHairs[index + 1].gameObject.SetActive(false);
                     ActiveFemale();
-                    FemaleHairs[index + 1].GetComponent<ModelHatController>().enabled = false;
                 }
             }
             if (StartSceneButton.activeM)
             {
                 if (index == 0)
                 {
+                    print("0MaschioLeft");
                     index = 3;
+
+                    MaleHairs[0].gameObject.SetActive(false);
                     ActiveMale();
 
                     //Usare MaleHairs.Lenght al posto di 3 (Al momento non funziona)
 
-                    MaleHairs[0].GetComponent<ModelHatController>().enabled = false;
                 }
 
                 else
                 {
+                    print("+MaschioLeft");
                     index--;
+
+                    MaleHairs[index + 1].gameObject.SetActive(false);
                     ActiveMale();
-                    MaleHairs[index + 1].GetComponent<ModelHatController>().enabled = false;
                 }
             }
         }
@@ -172,12 +191,26 @@ public class TryOnYourSelfCO : MonoBehaviour {
 
     void ActiveFemale()
     {
-                FemaleHairs[index].GetComponent<ModelHatController>().enabled = true;
+                FemaleHairs[index].gameObject.SetActive(true);
     }
 
     void ActiveMale()
     {
-                MaleHairs[index].GetComponent<ModelHatController>().enabled = true;
-              
+                MaleHairs[index].gameObject.SetActive(true);
+
+    }
+    void AssignObject()
+    {
+
+        FemaleHairs[0] = GameObject.FindGameObjectWithTag("FemaleHair1");
+        FemaleHairs[1] = GameObject.FindGameObjectWithTag("FemaleHair2");
+        FemaleHairs[2] = GameObject.FindGameObjectWithTag("FemaleHair3");
+        FemaleHairs[3] = GameObject.FindGameObjectWithTag("FemaleHair4");
+        FemaleHairs[4] = GameObject.FindGameObjectWithTag("FemaleHair5");
+
+        MaleHairs[0] = GameObject.FindGameObjectWithTag("MaleHair1");
+        MaleHairs[1] = GameObject.FindGameObjectWithTag("MaleHair2");
+        MaleHairs[2] = GameObject.FindGameObjectWithTag("MaleHair3");
+        MaleHairs[3] = GameObject.FindGameObjectWithTag("MaleHair4");
     }
 }

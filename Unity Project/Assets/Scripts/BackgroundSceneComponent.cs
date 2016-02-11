@@ -10,10 +10,10 @@ public class BackgroundSceneComponent : MonoBehaviour
     Color maincolor;
     Color onMouseEntercolor;
     Color onMouseClickColor;
+    static public int index = 0;
 
     public GameObject[] FemaleHairs = new GameObject[5];
     public GameObject[] MaleHairs = new GameObject[4];
-    static public int index = 0;
     void Start()
     {
         //Assign the Color
@@ -67,15 +67,32 @@ public class BackgroundSceneComponent : MonoBehaviour
         {
             Application.LoadLevel("SceneTryToYourself");
         }
+        if (isRight)
+        {
+            if (index < 7)
+                index++;
+            else
+                index = 0;
+
+            print(index);
+        }
+        if (isLeft)
+        {
+            if (index > 0)
+                index--;
+            else
+                index = 7;
+            print(index);
+        }
     }
     void ActiveFemale()
     {
-        FemaleHairs[index].GetComponent<ModelHatController>().enabled = true;
+        FemaleHairs[TryOnYourSelfCO.index].GetComponent<ModelHatController>().enabled = true;
     }
 
     void ActiveMale()
     {
-        MaleHairs[index].GetComponent<ModelHatController>().enabled = true;
+        MaleHairs[TryOnYourSelfCO.index].GetComponent<ModelHatController>().enabled = true;
 
     }
 }
