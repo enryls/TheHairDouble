@@ -6,6 +6,7 @@ public class StartSceneButton : MonoBehaviour {
 	public bool isFemale = false;
     public bool isTryOnYourSelf = false;
     public bool isGoToScan = false;
+    public bool isExit = false;
     static public bool activeM;
     static public bool activeF;
     Color maincolor;
@@ -38,15 +39,15 @@ public class StartSceneButton : MonoBehaviour {
     void OnMouseEnter()
     {
         //Color of the Buttons on Mouse Enter
-        //if (!activeF && !activeM)
+       if (!isMale && !isFemale)
             GetComponent<Renderer>().material.color = onMouseEntercolor;
     }
 
     void OnMouseExit()
     {
-        //Color of the buttons on Mouse Exit return to main color
-        //if(!activeF && !activeM)
-         GetComponent<Renderer>().material.color = maincolor;
+        //Color of the buttons on Mouse Exit return to main color if isn't male or female
+        if (!isMale && !isFemale)
+            GetComponent<Renderer>().material.color = maincolor;
     }
     void OnMouseUp()
     {
@@ -56,15 +57,20 @@ public class StartSceneButton : MonoBehaviour {
         //Change the position of the Camera and select the correct body model for the gender selected
         if (isFemale)
         {
-           
+            GetComponent<Renderer>().material.color = onMouseEntercolor;
+            GameObject.FindGameObjectWithTag("M").GetComponent<Renderer>().material.color = maincolor; 
             activeF = true;
+            activeM = false;
                      
         }
 
         if (isMale)
         {
-            
+            GetComponent<Renderer>().material.color = onMouseEntercolor;
+            GameObject.FindGameObjectWithTag("F").GetComponent<Renderer>().material.color = maincolor;
+
             activeM = true;
+            activeF = false;
             
         }
         if (activeF || activeM)
@@ -86,8 +92,12 @@ public class StartSceneButton : MonoBehaviour {
             {
                 Application.LoadLevel("SceneTryToYourself");
             }
+            
         }
-
+        if (isExit)
+        {
+            Application.Quit();
+        }
     }
     
 }

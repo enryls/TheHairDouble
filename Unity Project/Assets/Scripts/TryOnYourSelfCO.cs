@@ -82,6 +82,7 @@ public class TryOnYourSelfCO : MonoBehaviour {
         {
             StartSceneButton.activeM = false;
             StartSceneButton.activeF = false;
+            CameraPosition.posCamera = 1;
             Application.LoadLevel("MainScene");
         }
 
