@@ -1,0 +1,198 @@
+fileFormatVersion: 2
+guid: 1de229ef691fd764f91295714e893145
+timeCreated: 1455301580
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Boxers
+    100002: Fabric
+    100004: FabricTank
+    100006: FabricTankini
+    100008: Feet
+    100010: Fingernails
+    100012: Forearms
+    100014: Hands
+    100016: Head
+    100018: Hips
+    100020: Legs
+    100022: //RootNode
+    100024: Neck
+    100026: Nipples
+    100028: Shoulders
+    100030: Toenails
+    100032: Torso
+    100034: TrimLegs
+    100036: TrimNeck
+    100038: TrimNeck_Tankini
+    100040: TrimSleeves
+    100042: TrimSleeves_Tankini
+    100044: TrimWaist
+    100046: TrimWaist_Tankini
+    100048: TrimWaistband
+    100050: WaistBand
+    400000: Boxers
+    400002: Fabric
+    400004: FabricTank
+    400006: FabricTankini
+    400008: Feet
+    400010: Fingernails
+    400012: Forearms
+    400014: Hands
+    400016: Head
+    400018: Hips
+    400020: Legs
+    400022: //RootNode
+    400024: Neck
+    400026: Nipples
+    400028: Shoulders
+    400030: Toenails
+    400032: Torso
+    400034: TrimLegs
+    400036: TrimNeck
+    400038: TrimNeck_Tankini
+    400040: TrimSleeves
+    400042: TrimSleeves_Tankini
+    400044: TrimWaist
+    400046: TrimWaist_Tankini
+    400048: TrimWaistband
+    400050: WaistBand
+    2300000: Boxers
+    2300002: Fabric
+    2300004: FabricTank
+    2300006: FabricTankini
+    2300008: Feet
+    2300010: Fingernails
+    2300012: Forearms
+    2300014: Hands
+    2300016: Head
+    2300018: Hips
+    2300020: Legs
+    2300022: Neck
+    2300024: Nipples
+    2300026: Shoulders
+    2300028: Toenails
+    2300030: Torso
+    2300032: TrimLegs
+    2300034: TrimNeck
+    2300036: TrimNeck_Tankini
+    2300038: TrimSleeves
+    2300040: TrimSleeves_Tankini
+    2300042: TrimWaist
+    2300044: TrimWaist_Tankini
+    2300046: TrimWaistband
+    2300048: WaistBand
+    3300000: Boxers
+    3300002: Fabric
+    3300004: FabricTank
+    3300006: FabricTankini
+    3300008: Feet
+    3300010: Fingernails
+    3300012: Forearms
+    3300014: Hands
+    3300016: Head
+    3300018: Hips
+    3300020: Legs
+    3300022: Neck
+    3300024: Nipples
+    3300026: Shoulders
+    3300028: Toenails
+    3300030: Torso
+    3300032: TrimLegs
+    3300034: TrimNeck
+    3300036: TrimNeck_Tankini
+    3300038: TrimSleeves
+    3300040: TrimSleeves_Tankini
+    3300042: TrimWaist
+    3300044: TrimWaist_Tankini
+    3300046: TrimWaistband
+    3300048: WaistBand
+    4300000: Boxers
+    4300002: Fabric
+    4300004: FabricTank
+    4300006: FabricTankini
+    4300008: Feet_MeshPart0
+    4300010: Fingernails
+    4300012: Forearms_MeshPart0
+    4300014: Hands
+    4300016: Head
+    4300018: Hips_MeshPart0
+    4300020: Legs
+    4300022: Neck
+    4300024: Nipples
+    4300026: Shoulders
+    4300028: Toenails
+    4300030: Torso_MeshPart0
+    4300032: TrimLegs
+    4300034: TrimNeck
+    4300036: TrimNeck_Tankini
+    4300038: TrimSleeves
+    4300040: TrimSleeves_Tankini
+    4300042: TrimWaist
+    4300044: TrimWaist_Tankini
+    4300046: TrimWaistband
+    4300048: WaistBand
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

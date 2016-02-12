@@ -67,6 +67,8 @@ public class ScanSceneButton : MonoBehaviour
             GameObject.FindGameObjectWithTag("ScanObject").transform.position = new Vector3(947.5f, -668.01f, -11.1826f);
             GameObject.FindGameObjectWithTag("man").transform.position = new Vector3(944.7f, -682.9f, -4.020004f);
             GameObject.FindGameObjectWithTag("woman").transform.position = new Vector3(945.3f, -683.2f, -4.932602f);
+            GameObject.FindGameObjectWithTag("M").GetComponent<Renderer>().material.color = maincolor;
+            GameObject.FindGameObjectWithTag("F").GetComponent<Renderer>().material.color = maincolor;
         }
         
         if (isContinue)
