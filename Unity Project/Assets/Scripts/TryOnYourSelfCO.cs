@@ -28,14 +28,18 @@ public class TryOnYourSelfCO : MonoBehaviour {
         AssignObject();
 
         //Desable the Arrays Objects
-        /*for(int i=0; i < 5; i++)
+        /*
+        for(int i=0; i < 5; i++)
         {
             FemaleHairs[i].gameObject.SetActive(false);
             if (i < 4)
             {
+                GameObject otherCube = (GameObject)GameObject.Find("newCube");
+
                 MaleHairs[i].gameObject.SetActive(false);
             }
-        }*/
+        }
+        */
         FemaleHairs[0].gameObject.SetActive(false);
         FemaleHairs[1].gameObject.SetActive(false);
         FemaleHairs[2].gameObject.SetActive(false);
@@ -46,6 +50,7 @@ public class TryOnYourSelfCO : MonoBehaviour {
         MaleHairs[1].gameObject.SetActive(false);
         MaleHairs[2].gameObject.SetActive(false);
         MaleHairs[3].gameObject.SetActive(false);
+        
 
         //Enable the Sex choosen
         if (StartSceneButton.activeF)
@@ -164,7 +169,7 @@ public class TryOnYourSelfCO : MonoBehaviour {
             {
                 if (index == 0)
                 {
-                    print("0MaschioLeft");
+                    print("0MaschioLeft" + index);
                     index = 3;
 
                     MaleHairs[0].gameObject.SetActive(false);
@@ -176,7 +181,7 @@ public class TryOnYourSelfCO : MonoBehaviour {
 
                 else
                 {
-                    print("+MaschioLeft");
+                    print("+MaschioLeft" + index);
                     index--;
 
                     MaleHairs[index + 1].gameObject.SetActive(false);
@@ -203,15 +208,15 @@ public class TryOnYourSelfCO : MonoBehaviour {
     void AssignObject()
     {
 
-        FemaleHairs[0] = GameObject.FindGameObjectWithTag("FemaleHair1");
-        FemaleHairs[1] = GameObject.FindGameObjectWithTag("FemaleHair2");
-        FemaleHairs[2] = GameObject.FindGameObjectWithTag("FemaleHair3");
-        FemaleHairs[3] = GameObject.FindGameObjectWithTag("FemaleHair4");
-        FemaleHairs[4] = GameObject.FindGameObjectWithTag("FemaleHair5");
+        FemaleHairs[0] = GameObject.Find("FemaleHair1");
+        FemaleHairs[1] = GameObject.Find("FemaleHair2");
+        FemaleHairs[2] = GameObject.Find("FemaleHair3");
+        FemaleHairs[3] = GameObject.Find("FemaleHair4");
+        FemaleHairs[4] = GameObject.Find("FemaleHair5");
 
-        MaleHairs[0] = GameObject.FindGameObjectWithTag("MaleHair1");
-        MaleHairs[1] = GameObject.FindGameObjectWithTag("MaleHair2");
-        MaleHairs[2] = GameObject.FindGameObjectWithTag("MaleHair3");
-        MaleHairs[3] = GameObject.FindGameObjectWithTag("MaleHair4");
+        MaleHairs[0] = GameObject.Find("MaleHair1");
+        MaleHairs[1] = GameObject.Find("MaleHair2");
+        MaleHairs[2] = GameObject.Find("MaleHair3");
+        MaleHairs[3] = GameObject.Find("MaleHair4");
     }
 }
