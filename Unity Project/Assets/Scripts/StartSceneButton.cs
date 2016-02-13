@@ -31,6 +31,8 @@ public class StartSceneButton : MonoBehaviour {
 				break;
 			}
 
+            if (InteractionManager.mouseclick)
+                OnMouseUp();
 		
 		}
 	

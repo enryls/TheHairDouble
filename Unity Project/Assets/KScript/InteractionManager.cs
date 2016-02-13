@@ -21,7 +21,9 @@ public class InteractionManager : MonoBehaviour
         Release = 2
     }
 
-	[Tooltip("Index of the player, tracked by this component. 0 means the 1st player, 1 - the 2nd one, 2 - the 3rd one, etc.")]
+    static public bool mouseclick = false;
+
+    [Tooltip("Index of the player, tracked by this component. 0 means the 1st player, 1 - the 2nd one, 2 - the 3rd one, etc.")]
 	public int playerIndex = 0;
 	
 	[Tooltip("Whether to use the GUI hand-cursor as on-screen cursor.")]
@@ -706,18 +708,32 @@ public class InteractionManager : MonoBehaviour
 			
 			if(isLeftHandPrimary)
 			{
-				if(lastLeftHandEvent == HandEventType.Grip)
-					texture = gripHandTexture;
-				else if(lastLeftHandEvent == HandEventType.Release)
-					texture = releaseHandTexture;
+                if (lastLeftHandEvent == HandEventType.Grip)
+                {
+                    texture = gripHandTexture;
+                    mouseclick = true;
+
+                }
+                else if (lastLeftHandEvent == HandEventType.Release)
+                {
+                    texture = releaseHandTexture;
+                    mouseclick = false;
+                }
 			}
 			else if(isRightHandPrimary)
 			{
-				if(lastRightHandEvent == HandEventType.Grip)
-					texture = gripHandTexture;
-				else if(lastRightHandEvent == HandEventType.Release)
-					texture = releaseHandTexture;
-			}
+                if (lastRightHandEvent == HandEventType.Grip)
+                {
+                    texture = gripHandTexture;
+                    mouseclick = true;
+
+                }
+                else if (lastRightHandEvent == HandEventType.Release)
+                {
+                    texture = releaseHandTexture;
+                    mouseclick = false;
+                }
+            }
 			
 			if(texture == null)
 			{
