@@ -38,6 +38,9 @@ public class CameraPosition : MonoBehaviour {
                 transform.position = new Vector3(0f, -500f, -17f);
                 //BodySourceView.body.transform.position = new Vector3(0f, -500f, 0f);
                 break;
+            case (5):
+                transform.position = new Vector3(-2500f, -500f, -17f);
+                break;
 			
 
 		}

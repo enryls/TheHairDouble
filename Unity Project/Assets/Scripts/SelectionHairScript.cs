@@ -77,14 +77,14 @@ public class SelectionHairScript : MonoBehaviour {
 
             if (StartSceneButton.activeF)
             {
-                GameObject.FindGameObjectWithTag("woman").transform.position = new Vector3(999.88f, -675.04f, -3.43f);
-                
+                GameObject.FindGameObjectWithTag("woman").transform.position = new Vector3(998.95f, -678.34f, -12.01f);
+
             }
 
             if (StartSceneButton.activeM)
             {
-                GameObject.FindGameObjectWithTag("man").transform.position = new Vector3(999.28f, -674.69f, -3.5f);
-               
+                GameObject.FindGameObjectWithTag("man").transform.position = new Vector3(999.22f, -678.53f, -9.98f);
+
             }
 
             //Automatizzare questi spostamenti 
@@ -111,12 +111,14 @@ public class SelectionHairScript : MonoBehaviour {
             if (StartSceneButton.activeF) {
                 PositionFemale(2);
                 //FemaleHairs[index].transform.position = new Vector3(0.14f, -514.83f, -9.853479f);
-                GameObject.FindGameObjectWithTag("woman").transform.position = new Vector3(0.65f, -506.64f, -8.13f);
+                //GameObject.FindGameObjectWithTag("woman").transform.position = new Vector3(0.65f, -506.64f, -8.13f);
+                GameObject.FindGameObjectWithTag("woman").transform.position = new Vector3(-0.49f, -509.26f, -15.23f);
             }
             if (StartSceneButton.activeM) {
                 PositionMale(2);
                 //MaleHairs[index].transform.position = new Vector3(0.14f, -514.83f, -9.853479f);
-                GameObject.FindGameObjectWithTag("man").transform.position = new Vector3(0.05f, -506.29f, -8.2f);
+                //GameObject.FindGameObjectWithTag("man").transform.position = new Vector3(0.05f, -506.29f, -8.2f);
+                GameObject.FindGameObjectWithTag("man").transform.position = new Vector3(-0.28f, -509.44f, -13.404f);
             }
             
             

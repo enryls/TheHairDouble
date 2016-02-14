@@ -87,12 +87,12 @@ public class BackgroundSceneComponent : MonoBehaviour
     }
     void ActiveFemale()
     {
-        FemaleHairs[TryOnYourSelfCO.index].GetComponent<ModelHatController>().enabled = true;
+        FemaleHairs[SelectHairForYryScene.indexTOT].GetComponent<ModelHatController>().enabled = true;
     }
 
     void ActiveMale()
     {
-        MaleHairs[TryOnYourSelfCO.index].GetComponent<ModelHatController>().enabled = true;
+        MaleHairs[SelectHairForYryScene.indexTOT].GetComponent<ModelHatController>().enabled = true;
 
     }
 }

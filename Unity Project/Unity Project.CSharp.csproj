@@ -18,6 +18,7 @@
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.3.0f4</UnityVersion>
     <RootNamespace></RootNamespace>
+    <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -109,12 +110,11 @@
     <Compile Include="Assets\Scripts\BackgroundTexture.cs" />
     <Compile Include="Assets\Scripts\CameraPosition.cs" />
     <Compile Include="Assets\Scripts\DepthSourceView.cs" />
-    <Compile Include="Assets\Scripts\HairOnTry.cs" />
     <Compile Include="Assets\Scripts\MeshCut.cs" />
     <Compile Include="Assets\Scripts\ScanSceneButton.cs" />
+    <Compile Include="Assets\Scripts\SelectHairForYryScene.cs" />
     <Compile Include="Assets\Scripts\SelectionHairScript.cs" />
     <Compile Include="Assets\Scripts\StartSceneButton.cs" />
-    <Compile Include="Assets\Scripts\ToolUser.cs" />
     <Compile Include="Assets\Scripts\TryOnYourSelfCO.cs" />
     <Compile Include="Assets\Scripts\WallPapersSelection.cs" />
   </ItemGroup>

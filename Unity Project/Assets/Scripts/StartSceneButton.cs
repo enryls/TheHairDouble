@@ -82,17 +82,22 @@ public class StartSceneButton : MonoBehaviour {
                 CameraPosition.posCamera = 2;
                 if (activeM)
                 {
-                    GameObject.FindGameObjectWithTag("man").transform.position = new Vector3(999.28f, -674.69f, -3.5f);
+                    GameObject.FindGameObjectWithTag("man").transform.position = new Vector3(999.22f, -678.53f, -9.98f);
+                    //GameObject.FindGameObjectWithTag("man").transform.position = new Vector3(999.28f, -674.69f, -3.5f);
                 }
                 else if (activeF)
                 {
-                    GameObject.FindGameObjectWithTag("woman").transform.position = new Vector3(999.88f, -675.04f, -3.43f);
+                    GameObject.FindGameObjectWithTag("woman").transform.position = new Vector3(998.95f, -678.34f, -12.01f);
+
+                    //GameObject.FindGameObjectWithTag("woman").transform.position = new Vector3(999.88f, -675.04f, -3.43f);
                 }
             }
 
             if (isTryOnYourSelf)
             {
-                Application.LoadLevel("SceneTryToYourself");
+                CameraPosition.posCamera = 5;
+                SelectHairForYryScene.CCCCChanges = true;
+                //Application.LoadLevel("SceneTryToYourself");
             }
             
         }

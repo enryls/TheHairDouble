@@ -5,15 +5,12 @@ public class TryOnYourSelfCO : MonoBehaviour {
 
     public bool isBack = false;
     public bool isContinue = false;
-    public bool isRight = false;
-    public bool isLeft = false;
     Color maincolor;
     Color onMouseEntercolor;
     Color onMouseClickColor;
 
     public GameObject[] FemaleHairs = new GameObject[5];
     public GameObject[] MaleHairs = new GameObject[4];
-    static public int index = 0;
 
 
     // Use this for initialization
@@ -40,6 +37,7 @@ public class TryOnYourSelfCO : MonoBehaviour {
             }
         }
         */
+        /*
         FemaleHairs[0].gameObject.SetActive(false);
         FemaleHairs[1].gameObject.SetActive(false);
         FemaleHairs[2].gameObject.SetActive(false);
@@ -50,7 +48,7 @@ public class TryOnYourSelfCO : MonoBehaviour {
         MaleHairs[1].gameObject.SetActive(false);
         MaleHairs[2].gameObject.SetActive(false);
         MaleHairs[3].gameObject.SetActive(false);
-        
+        */
 
         //Enable the Sex choosen
         if (StartSceneButton.activeF)
@@ -85,124 +83,38 @@ public class TryOnYourSelfCO : MonoBehaviour {
         GetComponent<Renderer>().material.color = onMouseClickColor;
         if (isBack)
         {
-            StartSceneButton.activeM = false;
-            StartSceneButton.activeF = false;
-            CameraPosition.posCamera = 1;
+            
+            CameraPosition.posCamera = 5;
+            SelectHairForYryScene.CCCCChanges = true;
             Application.LoadLevel("MainScene");
         }
 
-        if (isRight)
-        {
-            if (StartSceneButton.activeF)
-            {
-                print("femminadestraok");
-                if (index < FemaleHairs.Length - 1)
-                {
-                    index++;
-                    FemaleHairs[index - 1].gameObject.SetActive(false);
-                    ActiveFemale();
-
-
-
-                }
-
-                else
-                {
-                    index = 0;
-
-                    FemaleHairs[FemaleHairs.Length - 1].gameObject.SetActive(false);
-                    ActiveFemale();
-
-
-
-                }
-               
-            }
-            if (StartSceneButton.activeM)
-            {
-                print("maschiodestraok");
-                //Usare MaleHairs.Lenght al posto di 3 (Al momento non funziona)
-                if (index < 3)
-                {
-                    index++;
-
-                    MaleHairs[index - 1].gameObject.SetActive(false);
-                    ActiveMale();
-
-
-
-                }
-
-                else
-                {
-                    index = 0;
-
-                    MaleHairs[3].gameObject.SetActive(false);
-                    ActiveMale();
-                    //Usare MaleHairs.Lenght al posto di 3 (Al momento non funziona)
-
-
-                }
-            }
-        }
-        if (isLeft)
-        {
-            if (StartSceneButton.activeF)
-            {
-                if (index == 0)
-                {
-                    index = FemaleHairs.Length - 1;
-
-                    FemaleHairs[0].gameObject.SetActive(false);
-                    ActiveFemale();
-                }
-
-                else
-                {
-                    index--;
-
-                    FemaleHairs[index + 1].gameObject.SetActive(false);
-                    ActiveFemale();
-                }
-            }
-            if (StartSceneButton.activeM)
-            {
-                if (index == 0)
-                {
-                    print("0MaschioLeft" + index);
-                    index = 3;
-
-                    MaleHairs[0].gameObject.SetActive(false);
-                    ActiveMale();
-
-                    //Usare MaleHairs.Lenght al posto di 3 (Al momento non funziona)
-
-                }
-
-                else
-                {
-                    print("+MaschioLeft" + index);
-                    index--;
-
-                    MaleHairs[index + 1].gameObject.SetActive(false);
-                    ActiveMale();
-                }
-            }
-        }
+        
         if (isContinue)
         {
             Application.LoadLevel("SceneBackGround");
         }
     }
-
+    /*
     void ActiveFemale()
     {
-                FemaleHairs[index].gameObject.SetActive(true);
+                FemaleHairs[SelectHairForYryScene.indexTOT].gameObject.SetActive(true);
     }
 
     void ActiveMale()
     {
-                MaleHairs[index].gameObject.SetActive(true);
+                MaleHairs[SelectHairForYryScene.indexTOT].gameObject.SetActive(true);
+
+    }
+    */
+    void ActiveFemale()
+    {
+        FemaleHairs[SelectHairForYryScene.indexTOT].GetComponent<ModelHatController>().enabled = true;
+    }
+
+    void ActiveMale()
+    {
+        MaleHairs[SelectHairForYryScene.indexTOT].GetComponent<ModelHatController>().enabled = true;
 
     }
     void AssignObject()

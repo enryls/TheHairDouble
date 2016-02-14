@@ -64,12 +64,12 @@ public class WallPapersSelection : MonoBehaviour
 
             if (StartSceneButton.activeF)
             {
-                GameObject.FindGameObjectWithTag("woman").transform.position = new Vector3(-999.25f, -506.84f, -6.53f);
+                GameObject.FindGameObjectWithTag("woman").transform.position = new Vector3(-1000.46f, -509.44f, -13.85f);
             }
 
             if (StartSceneButton.activeM)
             {
-                GameObject.FindGameObjectWithTag("man").transform.position = new Vector3(-999.85f, -506.49f, -6.6f);
+                GameObject.FindGameObjectWithTag("man").transform.position = new Vector3(-1000.2f, -509.59f, -11.93f);
             }
 
         }
