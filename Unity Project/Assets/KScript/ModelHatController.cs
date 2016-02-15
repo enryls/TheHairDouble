@@ -10,6 +10,9 @@ public class ModelHatController : MonoBehaviour
 	public float verticalOffset = 0f;
     public float horizontalOffset = 0f;
     public float zOffset = 0f;
+    public float verticalRotationOffset = 0f;
+    public float horizontalRotationOffset = 0f;
+    public float zRotationOffset = 0f;
 
 	[Tooltip("Smooth factor used for hat-model movement and rotation.")]
 	public float smoothFactor = 10f;
@@ -17,12 +20,13 @@ public class ModelHatController : MonoBehaviour
 	private KinectManager kinectManager;
 	private FacetrackingManager faceManager;
 	private Quaternion initialRotation;
-	
+    private Quaternion otherRotation;
 
 
 	void Start () 
 	{
 		initialRotation = transform.rotation;
+        
 	}
 	
 	void Update () 
