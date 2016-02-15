@@ -60,16 +60,16 @@ public class WallPapersSelection : MonoBehaviour
             ScanSceneButton.changeScene = true;
             CameraPosition.posCamera = 3;
             if (ScanSceneButton.activeD)
-                GameObject.FindGameObjectWithTag("ScanObject").transform.position = new Vector3(-1005.3f, -501.4f, -14.8f);
+                GameObject.FindGameObjectWithTag("ScanObject").transform.position = new Vector3(-1004.4f, -501.5f, -14.52f);
 
             if (StartSceneButton.activeF)
             {
-                GameObject.FindGameObjectWithTag("woman").transform.position = new Vector3(-1000.46f, -509.44f, -13.85f);
+                GameObject.FindGameObjectWithTag("woman").transform.position = new Vector3(-1000.46f, -509.4f, -13.85f);
             }
 
             if (StartSceneButton.activeM)
             {
-                GameObject.FindGameObjectWithTag("man").transform.position = new Vector3(-1000.2f, -509.59f, -11.93f);
+                GameObject.FindGameObjectWithTag("man").transform.position = new Vector3(-1000.15f, -509.54f, -11.93f);
             }
 
         }

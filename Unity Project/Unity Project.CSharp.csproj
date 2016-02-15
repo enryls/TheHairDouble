@@ -77,12 +77,10 @@
   <ItemGroup>
     <Compile Include="Assets\KScript\AvatarController.cs" />
     <Compile Include="Assets\KScript\BackgroundRemovalManager.cs" />
-    <Compile Include="Assets\KScript\CubeGestureListener.cs" />
     <Compile Include="Assets\KScript\FacetrackingManager.cs" />
     <Compile Include="Assets\KScript\Filters\BoneOrientationsConstraint.cs" />
     <Compile Include="Assets\KScript\Filters\JointPositionsFilter.cs" />
     <Compile Include="Assets\KScript\ForegroundToImage.cs" />
-    <Compile Include="Assets\KScript\GrabRotateScript.cs" />
     <Compile Include="Assets\KScript\InteractionManager.cs" />
     <Compile Include="Assets\KScript\Interfaces\DepthSensorInterface.cs" />
     <Compile Include="Assets\KScript\Interfaces\Kinect1Interface.cs" />
@@ -96,11 +94,8 @@
     <Compile Include="Assets\KScript\MouseControl.cs" />
     <Compile Include="Assets\KScript\PortraitBackground.cs" />
     <Compile Include="Assets\KScript\SetBackgroundImage.cs" />
-    <Compile Include="Assets\KScript\SimpleGestureListener.cs" />
-    <Compile Include="Assets\KScript\SimpleVisualGestureListener.cs" />
     <Compile Include="Assets\KScript\SpeechErrorHandler.cs" />
     <Compile Include="Assets\KScript\SpeechManager.cs" />
-    <Compile Include="Assets\KScript\VisualGestureManager.cs" />
     <Compile Include="Assets\KinectView\Scripts\BodySourceManager.cs" />
     <Compile Include="Assets\KinectView\Scripts\BodySourceView.cs" />
     <Compile Include="Assets\KinectView\Scripts\ColorSourceManager.cs" />

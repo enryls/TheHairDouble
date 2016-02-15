@@ -55,7 +55,7 @@ public class ScanSceneButton : MonoBehaviour
             ChangeTheDamnSprite();
             scan = true;
             activeD = true;
-            GameObject.FindGameObjectWithTag("ScanObject").transform.position = new Vector3(993.83f, -669.6f, -11.7f);
+            GameObject.FindGameObjectWithTag("ScanObject").transform.position = new Vector3(994.66f, -669.8f, -12.7f);
 
         }
         if (isBack)
@@ -79,18 +79,18 @@ public class ScanSceneButton : MonoBehaviour
             //Fix this movement
             if (activeD)
             {
-                GameObject.FindGameObjectWithTag("ScanObject").transform.position = new Vector3(-1005.3f, -501.4f, -14.8f);
+                GameObject.FindGameObjectWithTag("ScanObject").transform.position = new Vector3(-1004.4f, -501.5f, -14.52f);
                 
             }
             if (StartSceneButton.activeF)
             {
-                GameObject.FindGameObjectWithTag("woman").transform.position = new Vector3(-1000.46f, -509.44f, -13.85f);
+                GameObject.FindGameObjectWithTag("woman").transform.position = new Vector3(-1000.46f, -509.4f, -13.85f);
                 //GameObject.FindGameObjectWithTag("woman").transform.position = new Vector3(-999.25f, -506.84f, -6.53f);
                 //ActivateDepth.activeF = false;
             }
             if (StartSceneButton.activeM)
             {
-                GameObject.FindGameObjectWithTag("man").transform.position = new Vector3(-1000.2f, -509.59f, -11.93f);
+                GameObject.FindGameObjectWithTag("man").transform.position = new Vector3(-1000.15f, -509.54f, -11.93f);
                 //GameObject.FindGameObjectWithTag("man").transform.position = new Vector3(-999.85f, -506.49f, -6.6f);
                 //ActivateDepth.activeM = false;
             }
