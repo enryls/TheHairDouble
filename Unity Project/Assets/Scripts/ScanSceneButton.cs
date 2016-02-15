@@ -50,8 +50,10 @@ public class ScanSceneButton : MonoBehaviour
         //Color of the buttons on Mouse Up
         GetComponent<Renderer>().material.color = onMouseClickColor;
 
+        
         if (isScan)
         {
+            //Active The Scan Object in the Scene
             ChangeTheDamnSprite();
             scan = true;
             activeD = true;
@@ -60,6 +62,7 @@ public class ScanSceneButton : MonoBehaviour
         }
         if (isBack)
         {
+            //Return to The Main Scene and restore the object
             CameraPosition.posCamera = 1;
             StartSceneButton.activeM = false;
             StartSceneButton.activeF = false;
@@ -73,10 +76,11 @@ public class ScanSceneButton : MonoBehaviour
         
         if (isContinue)
         {
+            //Go to the Next Scene and move the object
             CameraPosition.posCamera = 3;
             changeScene = true;
 
-            //Fix this movement
+            
             if (activeD)
             {
                 GameObject.FindGameObjectWithTag("ScanObject").transform.position = new Vector3(-1004.4f, -501.5f, -14.52f);
@@ -85,14 +89,10 @@ public class ScanSceneButton : MonoBehaviour
             if (StartSceneButton.activeF)
             {
                 GameObject.FindGameObjectWithTag("woman").transform.position = new Vector3(-1000.46f, -509.4f, -13.85f);
-                //GameObject.FindGameObjectWithTag("woman").transform.position = new Vector3(-999.25f, -506.84f, -6.53f);
-                //ActivateDepth.activeF = false;
             }
             if (StartSceneButton.activeM)
             {
                 GameObject.FindGameObjectWithTag("man").transform.position = new Vector3(-1000.15f, -509.54f, -11.93f);
-                //GameObject.FindGameObjectWithTag("man").transform.position = new Vector3(-999.85f, -506.49f, -6.6f);
-                //ActivateDepth.activeM = false;
             }
         }
 

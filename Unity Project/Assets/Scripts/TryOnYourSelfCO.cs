@@ -24,32 +24,6 @@ public class TryOnYourSelfCO : MonoBehaviour {
         //Assign the Arrays Objects
         AssignObject();
 
-        //Desable the Arrays Objects
-        /*
-        for(int i=0; i < 5; i++)
-        {
-            FemaleHairs[i].gameObject.SetActive(false);
-            if (i < 4)
-            {
-                GameObject otherCube = (GameObject)GameObject.Find("newCube");
-
-                MaleHairs[i].gameObject.SetActive(false);
-            }
-        }
-        */
-        /*
-        FemaleHairs[0].gameObject.SetActive(false);
-        FemaleHairs[1].gameObject.SetActive(false);
-        FemaleHairs[2].gameObject.SetActive(false);
-        FemaleHairs[3].gameObject.SetActive(false);
-        FemaleHairs[4].gameObject.SetActive(false);
-
-        MaleHairs[0].gameObject.SetActive(false);
-        MaleHairs[1].gameObject.SetActive(false);
-        MaleHairs[2].gameObject.SetActive(false);
-        MaleHairs[3].gameObject.SetActive(false);
-        */
-
         //Enable the Sex choosen
         if (StartSceneButton.activeF)
             ActiveFemale();
@@ -95,18 +69,7 @@ public class TryOnYourSelfCO : MonoBehaviour {
             Application.LoadLevel("SceneBackGround");
         }
     }
-    /*
-    void ActiveFemale()
-    {
-                FemaleHairs[SelectHairForYryScene.indexTOT].gameObject.SetActive(true);
-    }
 
-    void ActiveMale()
-    {
-                MaleHairs[SelectHairForYryScene.indexTOT].gameObject.SetActive(true);
-
-    }
-    */
     void ActiveFemale()
     {
         FemaleHairs[SelectHairForYryScene.indexTOT].GetComponent<ModelHatController>().enabled = true;

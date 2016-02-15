@@ -63,10 +63,12 @@ public class BackgroundSceneComponent : MonoBehaviour
     {
         //Color of the buttons on Mouse Up
         GetComponent<Renderer>().material.color = onMouseClickColor;
+        //If Click Back go in the last scene
         if (isBack)
         {
             Application.LoadLevel("SceneTryToYourself");
         }
+        //Right and Left Change the index value
         if (isRight)
         {
             if (index < 7)
@@ -85,6 +87,7 @@ public class BackgroundSceneComponent : MonoBehaviour
             print(index);
         }
     }
+    //ActiveFemale and ActiveMale active the script in the haircut selected
     void ActiveFemale()
     {
         FemaleHairs[SelectHairForYryScene.indexTOT].GetComponent<ModelHatController>().enabled = true;

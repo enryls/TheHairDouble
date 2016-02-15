@@ -83,13 +83,11 @@ public class StartSceneButton : MonoBehaviour {
                 if (activeM)
                 {
                     GameObject.FindGameObjectWithTag("man").transform.position = new Vector3(999.2f, -678.53f, -9.98f);
-                    //GameObject.FindGameObjectWithTag("man").transform.position = new Vector3(999.28f, -674.69f, -3.5f);
                 }
                 else if (activeF)
                 {
                     GameObject.FindGameObjectWithTag("woman").transform.position = new Vector3(998.85f, -678.3f, -12.01f);
-
-                    //GameObject.FindGameObjectWithTag("woman").transform.position = new Vector3(999.88f, -675.04f, -3.43f);
+                    
                 }
             }
 
@@ -97,7 +95,6 @@ public class StartSceneButton : MonoBehaviour {
             {
                 CameraPosition.posCamera = 5;
                 SelectHairForYryScene.CCCCChanges = true;
-                //Application.LoadLevel("SceneTryToYourself");
             }
             
         }

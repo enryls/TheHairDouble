@@ -109,7 +109,6 @@
     <Compile Include="Assets\Scripts\BackgroundTexture.cs" />
     <Compile Include="Assets\Scripts\CameraPosition.cs" />
     <Compile Include="Assets\Scripts\DepthSourceView.cs" />
-    <Compile Include="Assets\Scripts\MeshCut.cs" />
     <Compile Include="Assets\Scripts\ScanSceneButton.cs" />
     <Compile Include="Assets\Scripts\SelectHairForYryScene.cs" />
     <Compile Include="Assets\Scripts\SelectionHairScript.cs" />

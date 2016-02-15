@@ -10,6 +10,7 @@ public class BackgroundTexture : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        //Assign at GUITexture the selected Background
         switch (BackgroundSceneComponent.index)
         {
             case (0):
