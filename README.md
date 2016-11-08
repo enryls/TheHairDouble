@@ -8,6 +8,7 @@ video of the user.
 The points of strength of this application are the possibility for the user of having a realistic view on him or
 herself with the desired hair style, the feeling, while viewing the final result, of standing in front of a mirror,
 as the avatar moves in a specular way with the user and the ease of use of the application.
+Promo Video on https://www.youtube.com/watch?v=2AViNNzndAI .
 ##Goal
 The goal of “The Hair Double” is to be an instrument for users to have a realistic and detailed preview of a
 desired hairstyle on themselves, which is not achievable with a picture modified in Photoshop.
