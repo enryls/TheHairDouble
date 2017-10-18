@@ -1,5 +1,5 @@
 # The Hair Double
-##Abstract
+## Abstract
 “The Hair Double” is an application that allows users to scan a 3D model of their face which is then used to
 create a 3D avatar that resemble the user itself. Through the avatar it’s possible to try and change different
 hair styles from a predefined set of existing hair styles and, when the user chooses one, he or she can see
@@ -9,11 +9,11 @@ The points of strength of this application are the possibility for the user of h
 herself with the desired hair style, the feeling, while viewing the final result, of standing in front of a mirror,
 as the avatar moves in a specular way with the user and the ease of use of the application.
 Promo Video on https://www.youtube.com/watch?v=2AViNNzndAI .
-##Goal
+## Goal
 The goal of “The Hair Double” is to be an instrument for users to have a realistic and detailed preview of a
 desired hairstyle on themselves, which is not achievable with a picture modified in Photoshop.
-##Implementation
-###Hardware
+## Implementation
+### Hardware
 The video output for the application should be a medium/large screen (at least 24” diagonal length) for an
 optimal result.
 To guarantee better performances, the application should be used on a PC with these minimum requirements:
@@ -28,7 +28,7 @@ To guarantee better performances, the application should be used on a PC with th
   
 Another needs is the Kinect v2 sensor and the adapter for Windows (with power supply and USB
 hub).
-###Software
+### Software
 The project code is available at https://github.com/enryls/TheHairDouble .
 The software was developed with Kinect 2.0 SDK, Kinect Fusion API and Kinect Face API in Unity3D.
 For the scene in which you can create your avatar, the project was started with the Main Example
@@ -43,5 +43,5 @@ KinectManager and BackgroundRemoval
 DepthSourceManager and MultiFrameManager
 * Script: Contain the scripts developed by us only for this project
 
-##Other Details and References
+## Other Details and References
 For other details and references consult the Documentation PDF.
